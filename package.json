@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0",
-    "dev": "quasar dev"
+    "dev": "quasar dev",
+    "build":"quasar build"
   },
   "dependencies": {
     "@fawmi/vue-google-maps": "^0.9.72",
