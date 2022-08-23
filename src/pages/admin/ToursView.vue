@@ -142,10 +142,10 @@ const columns = [
   },
   { name: 'ChName', align: 'center', label: '行程名稱（中文）', field: row => row.CH_name, sortable: true },
   { name: 'image', align: 'center', label: '照片', sortable: true },
-  { name: 'Description', align: 'center', label: '行程介紹（英文）', field: row => row.description, sortable: true },
-  { name: 'Description', align: 'center', label: '行程介紹（英文）', field: row => row.CH_description, sortable: true },
+  // { name: 'Description', align: 'center', label: '行程介紹（英文）', field: row => row.description, sortable: true },
+  // { name: 'Description', align: 'center', label: '行程介紹（中文）', field: row => row.CH_description, sortable: true },
   { name: 'Category', label: '行程分類（英文）', field: row => row.category, sortable: true },
-  { name: 'Category', label: '行程分類（中文）', field: row => row.CH_category, sortable: true },
+  // { name: 'Category', label: '行程分類（中文）', field: row => row.CH_category, sortable: true },
   { name: 'edit', label: '編輯', sortable: true }
 ]
 
@@ -177,7 +177,7 @@ const form = reactive({
   valid: false,
   submitting: false
 })
-const options = ['History & Culture', 'Nature', 'sacred religion', 'shopping', 'cruisine']
+const options = ['History & Culture', 'Nature', 'sacred religion', 'shopping & experience', 'cruisine']
 const chOptions = ['歷史文化', '自然', '宗教', '購物', '美食']
 
 const rules = reactive({

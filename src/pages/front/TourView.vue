@@ -1,18 +1,48 @@
 <template>
 <div class="q-pa-md" id="TourView">
     <div class="banner">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+        <q-img src="../../assets/tours/Topkapi-Palace-3.jpg">
             <div class="absolute-full text-subtitle2 flex column flex-center">
-                <h1>{{tour.name}}</h1>
+                <h2>{{tour.name}}</h2>
             </div>
         </q-img>
     </div>
-    <div class="row">
-        <div class="col-9">
-            <h1>{{tour.name}}</h1>
-            <span>{{tour.description}}</span>
+
+    <!-- info-------------------------------------------------------------------- -->
+    <div class="row content">
+        <div class="col-8 info" style="border:2px solid yellow">
+            <p class="title">{{tour.name}}</p>
+            <p class="description">{{tour.description}}</p>
+
+            <table class="text-white">
+              <thead>
+                <th></th>
+                <th></th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Included</td>
+                  <td>{{tour.included}}</td>
+                </tr>
+                <tr>
+                  <td>Departure Time</td>
+                  <td>{{tour.departureTime}}</td>
+                </tr>
+                <tr>
+                  <td>Departure Location</td>
+                  <td>{{tour.departureLocation}}</td>
+                </tr>
+                <tr>
+                  <td>Note</td>
+                  <td>{{tour.note}}</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <q-img src="../../assets/tours/Topkapi-Palace-3.jpg"></q-img>
+
         </div>
-        <div class="col-3">
+        <div class="col-4 order">
             <q-form v-model="valid" @submit.prevent='submit'>
                 <!-- <q-input filled v-model="checkForm.name" label="Your name"  :rules="[ val => val && val.length > 0 || 'Please enter your name']"/> -->
                 <!-- <q-input filled v-model="checkForm.email" label="Your email"  :rules="emailRule"/> -->

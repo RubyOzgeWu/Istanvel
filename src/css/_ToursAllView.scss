@@ -1,6 +1,7 @@
 #ToursAllView{
     padding: 0;
     background: $primary;
+    height: 100%;
 
 
     .q-img{
@@ -10,18 +11,19 @@
         h1{
             font-family: 'Alegreya Sans SC', sans-serif;
             font-weight: 700;
+            line-height: 1.5;
         }
         p{
             font-family: 'Ubuntu', sans-serif;
             font-size: 1.5rem;
-            margin-top: 30px;
+
         }
     }
 
     .background{
         border: 2px solid ridge;
         background: white;
-        height: 100%;
+        height: 100vh;
         margin: 0 15%;
     }
 
@@ -36,15 +38,50 @@
 }
 
 // sm= 600px / md=1024px
+//---------------------------M1 1440px-------------------------------
+@media(max-width:1440px){
+    #ToursAllView{
+        .q-img{
+            width: 100%;
+            height: 300px;
+    
+            h1{
+                font-family: 'Alegreya Sans SC', sans-serif;
+                font-weight: 700;
+                font-size: 4.5rem;
+                line-height: 1.5;
+            }
+            p{
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1.25rem;
+            }
+        }
+        .background{
+            margin: 0 10%;
+        }
+    }
+}
+
 // RWD: 1024px---------------------------------
 @media(max-width:1024px) {
     #ToursAllView{
-        .tours{
-            .row{
-                .col{
-                    width: 50%;
-                }
+        .q-img{
+            width: 100%;
+            height: 250px;
+    
+            h1{
+                font-family: 'Alegreya Sans SC', sans-serif;
+                font-weight: 700;
+                font-size: 4rem;
+                line-height: 1.5;
             }
+            p{
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1rem;
+            }
+        }
+        .background{
+            margin: 0 10%;
         }
     }
 }
@@ -52,10 +89,30 @@
 // RWD: 600px-----------------------------------
 @media(max-width:600px) {
     #ToursAllView{
+        .q-img{
+            width: 100%;
+            height: 150px;
+    
+            h1{
+                font-family: 'Alegreya Sans SC', sans-serif;
+                font-weight: 700;
+                font-size: 2.5rem;
+                line-height: 1.5;
+            }
+            p{
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 0.75rem;
+            }
+        }
+        .background{
+            background: $primary;
+            margin: 0 3%;
+
+        }
         .tours{
             .row{
                 .col{
-                    width: 100%;
+                    width: 50%;
                 }
             }
         }

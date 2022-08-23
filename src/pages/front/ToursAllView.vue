@@ -5,7 +5,7 @@
           <!--  -->
           <div class="absolute-full text-subtitle2 flex column flex-center">
             <h1>Tours</h1>
-            <p>Enjoy the journey in Istanbul</p>
+            <p>Find the most special, impressive and fantastic journey in Istanbul</p>
           </div>
         </q-img>
     </div>
