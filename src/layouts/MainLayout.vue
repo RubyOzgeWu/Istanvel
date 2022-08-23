@@ -4,7 +4,7 @@
       <q-toolbar>
         <q-btn class="menu" v-if="$q.screen.lt.md" dense flat round icon="menu" @click="drawer = !drawer"  />
         <!-- <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" /> -->
-        <q-icon class="logo" name="img:src/assets/logo-temporary.png" />
+        <q-icon class="logo" name="img: logo-temporary.png"/>
         <q-toolbar-title  >
           <router-link to="/">İstanvel</router-link>
         </q-toolbar-title>
