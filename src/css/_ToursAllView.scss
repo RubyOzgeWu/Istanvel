@@ -1,0 +1,63 @@
+#ToursAllView{
+    padding: 0;
+    background: $primary;
+
+
+    .q-img{
+        width: 100%;
+        height: 500px;
+
+        h1{
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-weight: 700;
+        }
+        p{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+    }
+
+    .background{
+        border: 2px solid ridge;
+        background: white;
+        height: 100%;
+        margin: 0 10%;
+    }
+
+    .tours{
+        .row{
+            .col{
+                width: 25%;
+            }
+        }
+    }
+
+}
+
+// sm= 600px / md=1024px
+// RWD: 1024px---------------------------------
+@media(max-width:1024px) {
+    #ToursAllView{
+        .tours{
+            .row{
+                .col{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+// RWD: 600px-----------------------------------
+@media(max-width:600px) {
+    #ToursAllView{
+        .tours{
+            .row{
+                .col{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

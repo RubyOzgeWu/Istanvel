@@ -1,0 +1,55 @@
+#ActivitiesAllView{
+    padding: 0;
+
+    .q-img{
+        width: 100%;
+        height: 500px;
+
+        h1{
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-weight: 700;
+        }
+        p{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+    }
+
+    .activities{
+        .row{
+            .col{
+                width: 25%;
+            }
+        }
+    }
+
+}
+
+
+// sm= 600px / md=1024px
+// RWD: 1024px---------------------------------
+@media(max-width:1024px) {
+    #ActivitiesAllView{
+        .activities{
+            .row{
+                .col{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+// RWD: 600px-----------------------------------
+@media(max-width:600px) {
+    #ActivitiesAllView{
+        .activities{
+            .row{
+                .col{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

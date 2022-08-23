@@ -1,0 +1,47 @@
+{
+  "name": "quasar-project",
+  "version": "0.0.1",
+  "description": "A Quasar Project",
+  "productName": "Quasar App",
+  "author": "RubyOzgeWu <rubyozgewu@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "quasar dev"
+  },
+  "dependencies": {
+    "@fawmi/vue-google-maps": "^0.9.72",
+    "@googlemaps/js-api-loader": "^1.14.3",
+    "@quasar/extras": "^1.15.1",
+    "@vue-leaflet/vue-leaflet": "^0.6.1",
+    "axios": "^0.21.1",
+    "gmap-vue": "^3.5.4",
+    "leaflet": "^1.8.0",
+    "pinia": "^2.0.11",
+    "pinia-plugin-persistedstate": "^1.6.3",
+    "quasar": "^2.7.6",
+    "sweetalert2": "^11.4.24",
+    "validator": "^13.7.0",
+    "vue": "^3.0.0",
+    "vue-i18n": "^9.0.0",
+    "vue-material-design-icons": "^5.1.2",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^3.3.1",
+    "@quasar/app-vite": "^1.0.6",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.10.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.0.0"
+  },
+  "engines": {
+    "node": "^18 || ^16 || ^14.19",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

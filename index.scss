@@ -1,0 +1,24 @@
+//全域
+@import './src/css/app.scss';
+@import './src/css/quasar.variables.scss';
+
+// branch (ENG ver.)
+@import './src/css/IndexPage';
+@import './src/css/MainLayout';
+@import './src/css/LoginView';
+@import './src/css/ToursAllView';
+@import './src/css/adminTours';
+@import './src/css/TourView';
+@import './src/css/ActivityView';
+@import './src/css/ActivitiesAllView';
+@import './src/css/TourCard';
+@import './src/css/ActivityCard';
+@import './src/css/ToursView';
+@import './src/css/chBlogAllView';
+@import './src/css/chBlogView';
+@import './src/css/BlogAllView';
+@import './src/css/TransAllView';
+@import './src/css/TransportView';
+
+// banch (CH ver.)
+@import './src/css/chIndexPage';

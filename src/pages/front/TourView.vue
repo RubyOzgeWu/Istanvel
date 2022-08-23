@@ -1,0 +1,136 @@
+<template>
+<div class="q-pa-md" id="TourView">
+    <div class="banner">
+        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+            <div class="absolute-full text-subtitle2 flex column flex-center">
+                <h1>{{tour.name}}</h1>
+            </div>
+        </q-img>
+    </div>
+    <div class="row">
+        <div class="col-9">
+            <h1>{{tour.name}}</h1>
+            <span>{{tour.description}}</span>
+        </div>
+        <div class="col-3">
+            <q-form v-model="valid" @submit.prevent='submit'>
+                <!-- <q-input filled v-model="checkForm.name" label="Your name"  :rules="[ val => val && val.length > 0 || 'Please enter your name']"/> -->
+                <!-- <q-input filled v-model="checkForm.email" label="Your email"  :rules="emailRule"/> -->
+                <!-- <q-input filled v-model="checkForm.phone" label="Your phone number" /> -->
+                <q-input filled v-model="date" mask="date" :rules="['date']">
+                  <template v-slot:append>
+                    <q-icon name="event" class="cursor-pointer">
+                      <q-popup-proxy cover transition-show="scale" transition-hide="scale">
+                        <q-date v-model="date">
+                          <div class="row items-center justify-end">
+                            <q-btn v-close-popup label="Close" color="primary" flat />
+                          </div>
+                        </q-date>
+                      </q-popup-proxy>
+                    </q-icon>
+                  </template>
+                </q-input>
+                <q-input filled v-model.number="quantity" type="number" label="number of ticket"  :rules="quantityRule"/>
+                <!-- <q-input filled v-model="checkForm.message" type="textarea" label="leave us some messages" /> -->
+                <q-btn color="secondary" type="submit">add to the cart</q-btn>
+                <!-- <q-btn color="secondary" type="submit">click to order</q-btn> -->
+
+            </q-form>
+        </div>
+    </div>
+</div>
+</template>
+
+<script setup>
+import { reactive, ref } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import { api, apiAuth } from '../../boot/axios'
+import Swal from 'sweetalert2'
+import { useUserStore } from '../../stores/user'
+import { isEmail } from 'validator'
+
+const route = useRoute()
+const router = useRouter()
+const user = useUserStore()
+
+const tour = reactive({
+  _id: '',
+  name: '123',
+  description: '',
+  departureLocation: '',
+  departureTime: '',
+  included: '',
+  notIncluded: '',
+  openTime: '',
+  address: '',
+  note: '',
+  image: '',
+  price: 0,
+  category: '',
+  sell: false
+})
+
+// const checkForm = reactive({
+//   name: '',
+//   email: '',
+//   phone: '',
+//   date: '',
+//   quantity: 0,
+//   message: ''
+// })
+const date = ref('2022/01/01')
+const quantity = ref(0)
+const quantityRule = reactive([
+  v => v >= 1 || 'At least one ticket'
+])
+
+// const emailRule = reactive([
+//   v => !!v || 'email is required',
+//   v => isEmail(v) || 'please enter with email type'
+// ])
+const valid = ref(false)
+
+const init = async () => {
+  try {
+    const { data } = await api.get('/tours/' + route.params.id)
+    tour._id = data.result._id
+    tour.name = data.result.name
+    tour.description = data.result.description
+    tour.departureLocation = data.result.departureLocation
+    tour.departureTime = data.result.departureTime
+    tour.included = data.result.included
+    tour.notIncluded = data.result.notIncluded
+    tour.openTime = data.result.openTime
+    tour.address = data.result.address
+    tour.note = data.result.note
+    tour.image = data.result.image
+    tour.price = data.result.price
+    tour.category = data.result.category
+    tour.sell = data.result.sell
+  } catch (error) {
+    Swal.fire({
+      icon: 'error',
+      title: 'failed',
+      text: 'failed to get the tour info.'
+    })
+    router.go(-1)
+  }
+}
+init()
+
+// const submit = () => {
+//   if (!valid.value) return
+//   user.addOrder({ tour: tour._id, name: checkForm.name, email: checkForm.email, phone: checkForm.phone, date: checkForm.date, quantity: quantity.value, message: checkForm.message })
+// }
+const submit = () => {
+  user.addCart({
+    tour: tour._id,
+    // name: checkForm.name,
+    // email: checkForm.email,
+    // phone: checkForm.phone,
+    date: date.value,
+    quantity: quantity.value
+    // message: checkForm.message
+  }, 1)
+}
+</script>

@@ -1,0 +1,137 @@
+#main-layout{
+    .logo{
+        transform: scale(2.5);
+        padding-left: 25px;
+        margin-bottom: 12px;
+    }
+    .router-link-active{
+        color: white;
+        text-decoration: none;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        padding-left: 25px;
+    }
+    .langButton{
+        display: none;
+    }
+
+    .GL{
+        &__select-GL__menu-link{
+            .default-type{
+                visibility: hidden;
+            }
+
+            &:hover{
+                background: #0366d6;
+                color: white;
+    
+                .q-item__section--side{
+                    color: white;
+                }
+                .default-type{
+                    visibility: visible;
+                }
+            }
+        }
+        
+        &__toolbar-link{
+            padding-top: 5px;
+            .q-btn__content{
+                color: white;
+                text-decoration: none;
+                font-family: 'Alegreya Sans SC', sans-serif;
+                font-size: 1.2rem;
+                font-weight: 500;
+
+                // &:hover{
+                //     opacity: 0.7;
+                // }
+            }
+            
+        }
+        &__menu-link:hover{
+            background: #0366d6;
+            color: white;
+        }
+    
+    }
+    .fit{
+        background: $primary-lighter;
+        font-size: 1.5rem;
+        color: white;
+        font-family: 'Alegreya Sans SC', sans-serif;
+    }
+
+}
+
+
+//-------------------------------------M1 1440px-----------------------------------------
+@media(max-width:1500px){
+    #main-layout{
+        .logo{
+            transform: scale(2.25);
+            padding-left: 25px;
+            margin-bottom: 12px;
+        }
+        .router-link-active{
+            color: white;
+            text-decoration: none;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            padding-left: 20px;
+        }
+        .GL{
+            &__toolbar-link{
+                .q-btn__content{
+                    color: white;
+                    text-decoration: none;
+                    font-family: 'Alegreya Sans SC', sans-serif;
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+
+//-------------------------------------iPad 1024px-------------------------------
+@media(max-width:1024px){
+    #main-layout{
+        .logo{
+            display: none;
+        }
+        .router-link-active{
+            padding-left: 0px;
+        }
+    }
+}
+//-----------------------------------iPhone 600px--------------------------------
+@media(max-width:600px){
+    #main-layout{
+        .menu{
+            transform: scale(0.75);
+        }
+        .logo{
+            display: none;
+        }
+        .router-link-active{
+            padding-left: 0px;
+            font-size: 1.2rem;
+        }
+        .admin{
+            display: none;
+        }
+        .langButton{
+            display: block;
+            width: 20%;
+            background: $primary;
+        }
+        .language{
+            display: none;
+        }
+
+    }
+}
