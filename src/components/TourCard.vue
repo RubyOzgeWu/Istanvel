@@ -1,14 +1,13 @@
 <template>
 <div class="q-pa-lg row items-start q-gutter-md" id="TourCard">
     <q-card class="my-card column">
-      <q-card-section class="col-7 image">
+      <q-card-section class="col-7 col-md-7  image">
         <q-img :src="tour.image"></q-img>
       </q-card-section>
-      <q-card-section class="col-2 info title">
-        <router-link :to="'/tour/' + tour._id" class="text-h6 col">{{tour.name}}</router-link>
-      </q-card-section>
-      <q-card-section class="col-2 info title">
-          <p class="col description">{{ tour.description }}</p>
+
+      <q-card-section class="col-3 col-md-5 info title">
+        <router-link :to="'/tour/' + tour._id" class="text-h6">{{tour.name}}</router-link>
+        <p class="price">NT$ {{ tour.price }}</p>
       </q-card-section>
 
       <q-card-action class="col-1 button row">

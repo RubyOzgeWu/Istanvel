@@ -11,9 +11,9 @@
     </div>
 
     <div class="q-pa-md background">
-        <div class="tours column">
-          <div class="col-3">123</div>
-          <div class="col-9 row">
+        <div class="tours row">
+          <div class="col-12" style="border:1px solid green">123</div>
+          <div class="col-12 row">
             <div class="col col-12 col-sm-6 col-md-3" v-for="tour in tours" :key="tour._id">
               <TourCard :tour="tour" id="TourCard"></TourCard>
             </div>
