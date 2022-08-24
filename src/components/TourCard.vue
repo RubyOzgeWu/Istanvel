@@ -1,5 +1,5 @@
 <template>
-<div class="q-pa-xl-lg q-pa-lg-lg q-pa-md-md q-pa-sm-sm q-pa-xs-xs row items-start q-gutter-md" id="TourCard">
+<div class="q-pa-xl-lg q-pa-lg-md q-pa-md-md q-pa-sm-sm q-pa-xs-xs row items-start q-gutter-md" id="TourCard" data-aos="fade-left">
     <q-card class="my-card column">
       <q-card-section class="col-6 col-md-7 image">
         <q-img :src="tour.image"></q-img>

@@ -16,6 +16,8 @@
             }
             
         }
+
+        // ****************************post********************
         .q-tab-panel{
             // border: 2px solid yellow;
             background: $primary;
@@ -23,30 +25,44 @@
             height: calc(100vh - 54px);
             overflow-y: scroll;
             color: white;
+
             .text-h1{
-                padding-top: 50px;
-                padding-left: 70px;
+                padding-top: 3%;
+                padding-left: 5%;
                 font-family: 'Ubuntu', sans-serif;
                 font-weight: 900;
                 margin-bottom: 40px;
             }
 
-            .text-h3{
-                display: none;
-            }
+            // ------------------------card---------------------
 
             .q-card{
                 background: $primary;
                 // border: 2px solid yellow;
-                padding-top: 20px;
+                // padding-top: 20px;
+                padding: 0;
 
-                a{
-                    color: white;
-                    font-family: 'Ubuntu', sans-serif;
-                    font-weight: 500;
-                    text-decoration: none;
-                    line-height: 1;
-                    cursor: pointer;
+
+
+                .title{
+                    // border: 2px solid red;
+                    padding: 1.5%;
+                    a{
+                        display: block;
+                        font-size: 2.5rem;
+                        color: white;
+                        font-family: 'Ubuntu', sans-serif;
+                        font-weight: 500;
+                        text-decoration: none;
+                        line-height: 1;
+                        cursor: pointer;
+                    }
+                    
+
+                    p{
+                        padding: 0;
+                        margin: 0;
+                    }
 
                     &:hover{
                         opacity: 0.7;
@@ -54,169 +70,301 @@
                 }
 
                 .content{
+                    // border: 1px solid red;
+                    padding: 0 1.5%;
+                    padding-top: 1.5%;
                     font-size: 1rem;
                     line-height: 1.5;
                 }
+            }
+
+            //********************* History Layout*******************
+            .History{
+                flex-wrap: wrap;
+
+                .col:nth-child(1){
+                    flex: 1 1 100%;
+                    font-size: 2rem;
+                    // border: 1px solid black;
+                    padding: 0 4%;
+
+
+                    .HistoryImg{
+                        max-height: 380px;
+                    }
+
+                    .right{
+                        // border: 2px solid yellow;
+                        max-height: 380px;
+                        overflow: hidden;
+                    }
+
+
+                    .HistoryContent{
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 10;  
+                        -webkit-box-orient: vertical;  
+                    }
+
+                }
+                .col:nth-child(2){
+                    padding-left: 4%;
+                }
+                .col:nth-child(3){
+                    padding-right: 4%;
+                }
+
+                .col:nth-child(2),
+                .col:nth-child(3){
+                    flex: 1 1 50%;
+                    color: white;
+                    font-size: 2rem;
+                    padding-top: 1.5%;
+                    // border: 1px solid black;
+
+                    .HistoryImg{
+                        max-height: 300px;
+                    }
+                    .right{
+                        // border: 2px solid yellow;
+                        max-height: 316px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .HistoryContent{
+                        // padding-top: 0px;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;  
+                    }
+                }
+
+                .col:nth-child(2){
+                    .HistoryContent{
+                        -webkit-line-clamp: 6;  
+                    }
+                }
+
+                .col:nth-child(3){
+                    .HistoryContent{
+                        -webkit-line-clamp: 5;  
+                    }
+                }
 
             }
 
-            .firstHistory{
-                padding: 0 60px;
-                
-                .firstHistoryImg{
-                    width: 100%;
-                    height: 100%;
+
+            //**************************Geography**************************
+
+            .Geography{
+                .col{
+                    padding: 0 4%;
+
+                    .GeoImg{
+                        max-height: 450px;
+                    }
                 }
 
-                .firstHistoryContent{
-                    padding-top: 25px;
-                    height: 240px;
+                .info{
+                    // border: 2px solid red;
+                    height: 466px;
                     overflow: hidden;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 8;  
-                    -webkit-box-orient: vertical;  
+
+                    .content{
+                        padding-top: 2.5%;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical; 
+                    }
                 }
+
+                .col:nth-child(1){
+                    .content{
+                        -webkit-line-clamp: 14;  
+                    }
+                }
+
+                .col:nth-child(2){
+                    // background: #000;
+
+                    .info{
+                        order:2;
+
+                        .content{
+                            -webkit-line-clamp: 13;  
+                        }
+                    }
+                }
+
+
+
             }
 
-            .secondHistory{
-                padding-left: 60px;
-                // padding-top: 25px;
-                .secondHistoryImg{
-                    height: 280px;
-                }
-                .secondHistoryContent{
-                    padding-top: 30px;
-                    height: 230px;
-                    overflow: hidden;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 7;  
-                    -webkit-box-orient: vertical;  
-                }
+            //********************* Culture ******************
+            .text-center{
+                padding-left: 0;
+                padding-right: 3%;
             }
-            .thirdHistory{
-                padding-right: 60px;
-                // padding-top: 25px;
-                .thirdHistoryImg{
-                    height: 280px;
-                }
-                .thirdHistoryContent{
-                    padding-top: 60px;
-                    height: 200px;
-                    overflow: hidden;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 6;  
-                    -webkit-box-orient: vertical;  
-                }
-            }
+            .Culture{
+                .col{
+                    flex: 1 1 50%;
 
-            .firstGeo{
-                padding: 0 60px;
-                
-                .firstGeoImg{
-                    width: 100%;
-                    height: 100%;
+                    .CultureImg{
+                        max-height: 400px;
+                    }
                 }
 
-                .firstGeoContent{
-                    height: 240px;
+                .info{
+                    // border: 2px solid red;
+                    height: 450px;
                     overflow: hidden;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 8;  
-                    -webkit-box-orient: vertical;  
-                }
-            }
-            
-            .secondGeo{
-                padding: 0 60px;
-                
-                .secondGeoImg{
-                    width: 100%;
-                    height: 100%;
+                    margin-bottom: 5%;
+
+                    .content{
+                        padding-top: 2%;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical; 
+                        -webkit-line-clamp: 15;  
+                    }
                 }
 
-                .secondGeoContent{
-                    height: 240px;
-                    padding-top: 5%;
-                    overflow: hidden;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 8;  
-                    -webkit-box-orient: vertical;  
+                .col:nth-child(1){
+                    padding-left: 4%;
+                    padding-right: 0.5%;
+                }
+
+                .col:nth-child(2){
+                    padding-right: 4%;
+                    padding-left: 0.5%;
                 }
             }
         }
     }
 }
 
-//------------------------Macbook 1440px-------------------------------
-@media(max-width:1500px){
+//------------------------Macbook 1920px------------------------------
+@media(max-width:1920px){
     #BlogAllView{
         .insideView{
-            .tabs{
-                width: 250px;
-
-                .q-tab__label{
-                    font-size: 0.85rem;
-                }
-            }
+    
+            // ****************************post********************
             .q-tab-panel{
-                .firstHistory{
-                    padding: 0 60px;
-                    padding-bottom: 20px;
-                    
-                    .firstHistoryImg{
-                        width: 100%;
-                        height: 210px;
+    
+                // ------------------------card---------------------
+                .q-card{
+                    .title{
+                        a{
+                            font-size: 2rem;
+                        }
                     }
-                    
-                    .firstHistoryContent{
-                        padding-top: 20px;
-                        height: 90px;
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 3;  
-                        -webkit-box-orient: vertical;  
-                    }
-                } 
-
-                .secondHistory{
-                    padding: 0 60px;
-                    padding-bottom: 20px;
-                    .secondHistoryImg{
-                        width: 100%;
-                        height: 200px;
-                    }
-                    .col-md-7{
-                        padding-left: 16px;
-                    }
-                    .secondHistoryContent{
-                        padding-top: 25px;
-                        height: 120px;
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 4;  
-                        -webkit-box-orient: vertical;  
+    
+                    .content{
+                        padding-top: 2%;
                     }
                 }
+    
+                //********************* History Layout*******************
+                .History{
+                    flex-wrap: wrap;
+    
+                    .col:nth-child(1){
+    
+                        .HistoryImg{
+                            max-height: 260px;
+                        }
+    
+                        .right{
+                            max-height: 260px;
+                        }
+    
+    
+                        .HistoryContent{
+                            -webkit-line-clamp: 5;  
+                        }
+    
+                    }
+                    .col:nth-child(2),
+                    .col:nth-child(3){
 
-                .thirdHistory{
-                    padding:0 60px;
-                    // padding-top: 25px;
-                    .thirdHistoryImg{
-                        width: 100%;
-                        height: 200px;
+                        .HistoryImg{
+                            max-height: 220px;
+                        }
+                        .right{
+                            // border: 2px solid yellow;
+                            max-height: 230px;
+                        }
                     }
-                    .thirdHistoryContent{
-                        padding-top: 30px;
-                        height: 120px;
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 4;  
-                        -webkit-box-orient: vertical;  
+    
+                    .col:nth-child(2){
+                        .HistoryContent{
+                            -webkit-line-clamp: 3;  
+                        }
                     }
-                }            
+    
+                    .col:nth-child(3){
+                        .HistoryContent{
+                            -webkit-line-clamp: 3;  
+                        }
+                    }
+    
+                }
+    
+    
+                //**************************Geography**************************
+    
+                .Geography{
+                    .col{    
+                        .GeoImg{
+                            max-height: 300px;
+                        }
+                    }
+    
+                    .info{
+                        // border: 2px solid red;
+                        height: 300px;
+    
+                    }
+    
+                    .col:nth-child(1){
+                        .content{
+                            -webkit-line-clamp: 8;  
+                        }
+                    }
+    
+                    .col:nth-child(2){   
+                        .info{
+                            .content{
+                                -webkit-line-clamp: 8;  
+                            }
+                        }
+                    }
+    
+    
+    
+                }
+    
+                //********************* Culture ******************
+                .Culture{
+                    .col{
+                        .CultureImg{
+                            max-height: 290px;
+                        }
+                    }
+    
+                    .info{
+                        // border: 2px solid red;
+                        height: 290px;
+    
+                        .content{
+                            -webkit-line-clamp: 9;  
+                        }
+                    }
+                }
             }
         }
-        
+
     }
 }
 
@@ -225,76 +373,106 @@
     #BlogAllView{
         .insideView{
             .tabs{
-                width: 250px;
+                width: 150px;
 
-                .q-tab__label{
-                    font-size: 1rem;
+                .textTab{
+                    display: none;
                 }
             }
+    
+            // ****************************post********************
             .q-tab-panel{
+                // border: 2px solid yellow;
                 .text-h1{
-                    padding-top: 50px;
-                    padding-left: 60px;
-                    font-family: 'Ubuntu', sans-serif;
-                    font-weight: 900;
-                    margin-bottom: 15px;
+                    padding-top: 5%;
+                    padding-left: 7%;
+                    font-size: 3.5rem;
+                    line-height: 1.25;
                 }
-                .firstHistory{
-                    padding: 0 50px;
-                    padding-bottom: 15px;
-                    
-                    .firstHistoryImg{
-                        display: none;
-                    }
-                    
-                    
-                    .firstHistoryContent{
-                        padding-top: 10px;
-                        height: 90px;
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 3;  
-                        -webkit-box-orient: vertical;  
-                    }
-                } 
+                .space{
+                    display: none;
+                }
+    
+                // ------------------------card---------------------
+    
+                .q-card{
+                    margin-bottom: 5%;
 
-                .secondHistory{
-                    padding: 0 50px;
-                    padding-bottom: 15px;
-                    .secondHistoryImg{
-                        display: none;
+                }
+    
+                //********************* History Layout*******************
+                .History{
+                    flex-wrap: wrap;
+    
+                    .col:nth-child(1){
+                        .HistoryImg{
+                            width: 500px;
+                        }
+    
                     }
-                    .col-md-7{
-                        padding-left: 16px;
+                    .col:nth-child(2){
+                        padding-right: 4%;
                     }
-                    .secondHistoryContent{
-                        padding-top: 10px;
-                        height: 90px;
-                        overflow: scroll;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 3;  
-                        -webkit-box-orient: vertical;  
+                    .col:nth-child(3){
+                        padding-left: 4%;
+                    }
+    
+                    .col:nth-child(2),
+                    .col:nth-child(3){
+                        flex: 1 1 100%;
+    
+                        .HistoryImg{
+                            width: 500px;
+                        }
+                    }
+    
+                }
+    
+    
+                //**************************Geography**************************
+    
+                .Geography{
+                    .col{
+                        .GeoImg{
+                            width: 500px;
+                            // max-height: 300px;
+                        }
+                    }
+    
+                    .col:nth-child(1){
+                        .info{
+                            order: 1;
+                        }
                     }
                 }
-
-                .thirdHistory{
-                    padding:0 50px;
-
-                    .thirdHistoryImg{
-                        display: none;
+    
+                //********************* Culture ******************
+                .text-center{
+                    display: none;
+                }
+                .Culture{
+                    .col{
+                        flex: 1 1 100%;
+    
+                        .CultureImg{
+                            width: 500px;
+                        }
                     }
-                    .thirdHistoryContent{
-                        padding-top: 10px;
-                        height: 90px;
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 3;  
-                        -webkit-box-orient: vertical;  
+    
+    
+                    .col:nth-child(1){
+                        padding-left: 4%;
+                        padding-right: 4%;
                     }
-                }            
+    
+                    .col:nth-child(2){
+                        padding-right: 4%;
+                        padding-left: 4%;
+                    }
+                }
             }
         }
-        
+
     }
 }
 
@@ -302,83 +480,158 @@
 @media(max-width:600px){
     #BlogAllView{
         .insideView{
-            position: relative;
             .tabs{
+                width: 50px;
+                padding: 0;
+                padding-top: 50%;
 
-                .q-tab__label{
-                    font-size: 1rem;
+                .textTab{
+                    display: none;
                 }
             }
+    
+            // ****************************post********************
             .q-tab-panel{
-                .drawerButton{
-                    width: 50px;
-                    height: 50px;
-                    position: absolute;
-                    background: $secondary;
-                    border-radius: 50%;
-                }
+                // border: 2px solid yellow;
                 .text-h1{
-                    padding-top: 50px;
-                    padding-left: 60px;
-                    font-family: 'Ubuntu', sans-serif;
-                    font-weight: 900;
-                    margin-bottom: 15px;
+                    padding-top: 10%;
+                    padding-left: 7%;
+                    font-size: 2rem;
+                    line-height: 1.25;
+                    margin-bottom: 25px;
+
                 }
-                .firstHistory{
-                    padding: 0 50px;
-                    padding-bottom: 15px;
-                    .col-5{
-                        .firstHistoryImg{
+                .space{
+                    display: none;
+                }
+    
+                // ------------------------card---------------------
+    
+                .q-card{
+                    margin-bottom: 5%;
+
+                }
+    
+                //********************* History Layout*******************
+                .History{
+                    flex-wrap: wrap;
+
+                    .col:nth-child(1){
+
+                        .HistoryImg{
+                            width: 250px;
+                            height: 150px;
+                        }
+
+                        .HistoryContent{
                             display: none;
                         }
-                    }
-                    
-                    .firstHistoryContent{
-                        padding-top: 10px;
-                        height: 100px;
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 4;  
-                        -webkit-box-orient: vertical;  
-                    }
-                } 
+                        .title{
+                            padding: 0;
 
-                .secondHistory{
-                    padding: 0 50px;
-                    padding-bottom: 15px;
-                    .secondHistoryImg{
-                        display: none;
+                            a{
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .right{
+                            padding-top: .75%;
+                        }
+    
                     }
-                    .col-md-7{
-                        padding-left: 16px;
+                    .col:nth-child(2){
+                        padding-right: 4%;
                     }
-                    .secondHistoryContent{
-                        padding-top: 10px;
-                        height: 100px;
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 4;  
-                        -webkit-box-orient: vertical;  
+                    .col:nth-child(3){
+                        padding-left: 4%;
+                    }
+    
+                    .col:nth-child(2),
+                    .col:nth-child(3){
+                        flex: 1 1 100%;
+    
+                        .HistoryImg{
+                            width: 250px;
+                            height: 150px;
+                        }
+                        .HistoryContent{
+                            display: none;
+                        }
+                        .title{
+                            padding: 0;
+
+                            a{
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .right{
+                            padding-top: .75%;
+                        }
+
+                    }
+    
+                }
+    
+    
+                //**************************Geography**************************
+    
+                .Geography{
+                    .col{
+                        .GeoImg{
+                            width: 250px;
+                            height: 180px;
+                            // max-height: 300px;
+                        }
+
+                        .title{
+                            padding: 0;
+
+                            a{
+                                font-size: 1.5rem;
+                            }
+                        }
+
+                        .GeoContent{
+                            display: none;
+                        }
+
+                        .info{
+                            padding-top: .75%;
+                            height: 100%;
+                        }
                     }
                 }
+    
+                //********************* Culture ******************
+                .text-center{
+                    display: none;
+                }
+                .Culture{
+                    .col{
+                        flex: 1 1 100%;
+    
+                        .CultureImg{
+                            width: 250px;
+                            height: 180px;
+                        }
+                        .title{
+                            padding: 0;
 
-                .thirdHistory{
-                    padding:0 50px;
+                            a{
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .CultureContent{
+                            display: none;
+                        }
 
-                    .thirdHistoryImg{
-                        display: none;
+                        .info{
+                            padding-top: .75%;
+                            height: 100%;
+                        }
                     }
-                    .thirdHistoryContent{
-                        padding-top: 10px;
-                        height: 80px;
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 3;  
-                        -webkit-box-orient: vertical;  
-                    }
-                }            
+    
+                }
             }
         }
-        
     }
 }

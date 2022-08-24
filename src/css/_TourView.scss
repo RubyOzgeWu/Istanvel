@@ -1,6 +1,6 @@
 #TourView{
     background: $primary;
-    height: 100vh;
+    height: 100%;
     padding: 0;
 
     .q-img{
@@ -16,35 +16,90 @@
     }
 
     // -----------info-------------------------------------------
-    .content{
+    .background{
+        // margin: 0 10%;
         background: $primary;
+        max-width: 1500px;
+        margin: auto;
+        height: 100%;
+        .content{
+            background: $primary;
 
-        .info{
-            padding: 0 10%;
+            .info{
+                padding: 0 5%;
+                height: 100%;
 
 
-            .title{
-                padding-top: 5%;
-                font-size: 2rem;
-                font-weight: 500;
-                line-height: 1.5;
-                color: white;
+                .title{
+                    padding-top: 10%;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    line-height: 1.5;
+                    color: white;
+                }
+
+                .description{
+                    font-size: 1rem;
+                    font-weight: 300;
+                    color: white;
+                    padding-top: 3%;
+
+                }
+                .table{
+                    padding:5% 0;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    color: white;
+
+                    p{
+                        margin: 0;
+                        padding: 5% 0;
+                    }
+                }
+
+                th,tr,td{
+                    border-bottom: 1px solid white;
+                }
+
+                .image{
+                    height: 8%;
+                    margin: 5% 0;
+                }
+
             }
+            //-------order-------------------------------
+            .order{
+                padding: 5% 5%;
+                // padding-right: 10%;
 
-            .description{
-                font-size: 1rem;
-                font-weight: 300;
-                color: white;
-            }
+                h4{
+                    padding-left: 5%;
+                    font-size: 2rem;
+                    color: white;
+                    font-weight: 500;
+                    border-left: 10px solid white;
+                    margin-bottom: 12%;
+                }
+                .q-form{
+                    padding: 10% 5%;
+                    height: 22%;
+                    background: white;
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 3px 1px rgba(41, 40, 40, 0.3);
+                    text-align: center;
 
-            table,th,tr,td{
-                border-bottom: 1px solid white;
+                    .submit{
+                        position: absolute;
+                        bottom: 10%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+
+                }
             }
+            
+
 
         }
-        
-
-
     }
-
 }

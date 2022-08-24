@@ -1,10 +1,10 @@
 <template>
 <div class="q-pa-md" id="ToursAllView">
     <div class="banner">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+        <q-img src="../../assets/merveilleux.jpeg">
           <!--  -->
           <div class="absolute-full text-subtitle2 flex column flex-center">
-            <h1>Tours</h1>
+            <h1>Package Tours</h1>
             <p>Find the most special, impressive and fantastic journey in Istanbul</p>
           </div>
         </q-img>
@@ -12,9 +12,14 @@
 
     <div class="q-pa-md background">
         <div class="tours row">
-          <div class="col-12" style="border:1px solid green">123</div>
+          <div class="col-12">123</div>
           <div class="col-12 row">
-            <div class="col col-12 col-sm-6 col-md-3" v-for="tour in tours" :key="tour._id">
+            <div class="col col-xl-3 col-sm-3 col-md-3 col-xs-6" v-for="tour in tours" :key="tour._id">
+              <TourCard :tour="tour" id="TourCard"></TourCard>
+            </div>
+          </div>
+          <div class="col-12 row">
+            <div class="col col-xl-3 col-sm-3 col-md-3 col-xs-6" v-for="tour in tours" :key="tour._id">
               <TourCard :tour="tour" id="TourCard"></TourCard>
             </div>
           </div>
@@ -29,6 +34,9 @@ import { reactive } from 'vue'
 import Swal from 'sweetalert2'
 import { api } from '../../boot/axios.js'
 import TourCard from '../../components/TourCard.vue'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init()
 
 const tours = reactive([])
 

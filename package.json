@@ -9,13 +9,14 @@
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
-    "build":"quasar build"
+    "build": "quasar build"
   },
   "dependencies": {
     "@fawmi/vue-google-maps": "^0.9.72",
     "@googlemaps/js-api-loader": "^1.14.3",
     "@quasar/extras": "^1.15.1",
     "@vue-leaflet/vue-leaflet": "^0.6.1",
+    "aos": "next",
     "axios": "^0.21.1",
     "gmap-vue": "^3.5.4",
     "leaflet": "^1.8.0",

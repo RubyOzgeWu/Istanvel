@@ -1,42 +1,49 @@
 <template>
 <div class="q-pa-md" id="ActivityView">
     <div class="banner">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+        <q-img :src="activity.image">
             <div class="absolute-full text-subtitle2 flex column flex-center">
-                <h1>{{activity.name}}</h1>
+                <h2>{{activity.name}}</h2>
             </div>
         </q-img>
     </div>
-    <div class="row">
-        <div class="col-9">
-            <h1>{{activity.name}}</h1>
-            <span>{{activity.description}}</span>
-        </div>
-        <div class="col-3">
-            <q-form v-model="valid" @submit.prevent='submit'>
-                <!-- <q-input filled v-model="checkForm.name" label="Your name"  :rules="[ val => val && val.length > 0 || 'Please enter your name']"/> -->
-                <!-- <q-input filled v-model="checkForm.email" label="Your email"  :rules="[ val => val && val.length > 0 || 'Please enter your email']"/> -->
-                <!-- <q-input filled v-model="checkForm.phone" label="Your phone number" /> -->
-                <q-input filled v-model="date" mask="date" :rules="['date']">
-                  <template v-slot:append>
-                    <q-icon name="event" class="cursor-pointer">
-                      <q-popup-proxy cover transition-show="scale" transition-hide="scale">
-                        <q-date v-model="date">
-                          <div class="row items-center justify-end">
-                            <q-btn v-close-popup label="Close" color="primary" flat />
-                          </div>
-                        </q-date>
-                      </q-popup-proxy>
-                    </q-icon>
-                  </template>
-                </q-input>
-                <q-input filled v-model.number="quantity" type="number" label="number of ticket"  :rules="quantityRule"/>
-                <!-- <q-input filled v-model="checkForm.message" type="textarea" label="leave us some messages" /> -->
-                <q-btn color="secondary" type="submit">add to the cart</q-btn>
+    <div class="background">
+      <div class="row content">
+          <div class="col-sm-8 col-xs-12 info">
+            <p class="title">{{activity.name}}</p>
+            <p class="date">Duration:  {{new Date(activity.dateStart).getFullYear()}}/{{new Date(activity.dateStart).getMonth()+1}}/{{new Date(activity.dateStart).getDate()}}－{{new Date(activity.dateEnd).getFullYear()}}/{{new Date(activity.dateEnd).getMonth()+1}}/{{new Date(activity.dateEnd).getDate()}}</p>
+            <p class="description">{{activity.description}}</p>
+            <q-img :src="activity.image" class="image"></q-img>
+          </div>
+          <div class="col-sm-4 col-xs-12 order">
+              <h4>Package Options</h4>
+              <q-form v-model="valid" @submit.prevent='submit'>
+                  <!-- <q-input filled v-model="checkForm.name" label="Your name"  :rules="[ val => val && val.length > 0 || 'Please enter your name']"/> -->
+                  <!-- <q-input filled v-model="checkForm.email" label="Your email"  :rules="emailRule"/> -->
+                  <!-- <q-input filled v-model="checkForm.phone" label="Your phone number" /> -->
+                  <q-input filled v-model="date" mask="date" :rules="['date']">
+                    <template v-slot:append>
+                      <q-icon name="event" class="cursor-pointer">
+                        <q-popup-proxy cover transition-show="scale" transition-hide="scale">
+                          <q-date v-model="date">
+                            <div class="row items-center justify-end">
+                              <q-btn v-close-popup label="Close" color="primary" flat />
+                            </div>
+                          </q-date>
+                        </q-popup-proxy>
+                      </q-icon>
+                    </template>
+                  </q-input>
+                  <q-input filled v-model.number="quantity" type="number" label="number of ticket"  :rules="quantityRule"/>
+                  <!-- <q-input filled v-model="checkForm.message" type="textarea" label="leave us some messages" /> -->
+                  <q-btn color="secondary" type="submit" class="submit">add to the cart</q-btn>
+                  <!-- <q-btn color="secondary" type="submit">click to order</q-btn> -->
 
-            </q-form>
+              </q-form>
         </div>
+      </div>
     </div>
+
 </div>
 </template>
 

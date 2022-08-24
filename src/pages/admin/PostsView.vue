@@ -7,7 +7,7 @@
       <!-- <q-form > -->
         <q-card style="min-width: 700px">
             <q-toolbar>
-                <q-toolbar-title><span class="text-weight-bold">新增商品</span></q-toolbar-title>
+                <q-toolbar-title><span class="text-weight-bold">新增文章</span></q-toolbar-title>
             </q-toolbar>
 
             <q-form v-model='form.valid' @submit.prevent='submitForm'>

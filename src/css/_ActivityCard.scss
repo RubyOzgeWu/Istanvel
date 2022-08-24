@@ -1,36 +1,172 @@
 #ActivityCard{
     .my-card{
         width: 100%;
-        height: 300px;
-        // max-height: 300px;
+        height: 350px;
+        padding: 0;
         overflow: hidden;
-        
-        .bg-color{
-        background: $secondary-lightblue;
+        // flex-grow: 0;
+        // border: 2px solid red;
+        .q-card__section{
+            padding: 0;
+        }
 
-            .text-h6{
-                color: $primary;
-                text-decoration: none;
-                font-family: 'Ubuntu', sans-serif;
-                font-size: 1.5rem;
-                font-weight: 700;
+        .image{
+            .q-img{
+                width: 100%;
+                height: 100%;
+                // border: 5px solid yellow;
+            }
+        }
 
-                &:hover{
-                    color: $secondary;
+        .info{
+            width: 100%;
+            padding: 0 5%;
+            padding-top: 5%;
+
+            // .infoBox{
+            //     width: 100%;
+            // }
+
+            .activityName{
+                display: block;
+                width: 98%;
+                height: 40%;
+                // overflow: hidden;
+                // white-space: nowrap;
+                // text-overflow: ellipsis; 
+                // display: -webkit-box;
+                // text-overflow: ellipsis;
+                // -webkit-line-clamp: 2;
+                // -webkit-box-orient: vertical;
+
+                .nameLink{
+                    color: $primary;
+                    text-decoration: none;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    
+                    &:hover{
+                        color: $secondary;
+                    }
+                }
+            }
+
+            .price{
+                font-size: 1rem;
+                font-weight: 600;
+                width: 100%;
+                height: 30%;
+                // padding-top:6%;
+                padding-right: 5%;
+                margin: 0;
+                text-align: right;
+
+            }
+        }
+        .button{
+            position: absolute;
+            bottom: 4%;
+            left: 50%;
+            transform:translateX(-50%);
+            .q-btn{
+                width: 150px;
+                margin: auto;
+                background: $secondary;
+
+                span{
+                    margin: auto;
+                    color: white;
                 }
             }
         }
-        .description{
-            p{
-                max-height: 100%;
-                overflow: hidden;
-                display: -webkit-box;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 7;
-                -webkit-box-orient: vertical;
-            }
-        }
-
     }
     
+    
+}
+
+//----------------------------M1 1500px-----------------
+@media(max-width:1440px){
+    #ActivityCard{
+        .my-card{
+            height: 280px;
+            
+
+            .info{
+                .activityName{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis; 
+
+                    .nameLink{
+                        font-size: 0.85rem;
+                    }
+                }
+                .price{
+                    font-size: 0.85rem;
+                }
+            }
+
+            .button{
+                display: none;
+    
+            }
+        }
+    }
+}
+
+//------------------------ iPad 1024px------------------------------
+@media(max-width:1024px){
+    #ActivityCard{
+        .my-card{
+            width: 100%;
+            height: 160px;
+
+            .info{
+                .activityName{
+                    .nameLink{
+                        font-size: 0.85rem;
+                    }
+                }
+                .date{
+                    display: none;
+                }
+                .price{
+                    padding-top:0;
+                    font-size: 0.25rem;
+                }
+            }
+
+            .button{
+                display: none;
+    
+            }
+        }
+    }
+}
+
+//------------------------ iPhone 600px------------------------------
+@media(max-width:600px){
+    #ActivityCard{
+        .my-card{
+            height: 180px;
+
+            .info{
+                .tourName{
+                    .nameLink{
+                        font-size: 0.85rem;
+                    }
+                }
+                .price{
+                    padding-top:10%;
+                    font-size: 0.25rem;
+                }
+            }
+
+            .button{
+                display: none;
+    
+            }
+        }
+    }
 }

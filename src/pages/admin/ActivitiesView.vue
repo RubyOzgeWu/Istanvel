@@ -137,8 +137,8 @@ const columns = [
   },
   { name: 'ChName', align: 'center', label: '活動名稱（中文）', field: row => row.CH_name, sortable: true },
   { name: 'image', align: 'center', label: '照片', sortable: true },
-  { name: 'Description', align: 'center', label: '活動介紹（英文）', field: row => row.description, sortable: true },
-  { name: 'ChDescription', align: 'center', label: '活動介紹（中文）', field: row => row.CH_description, sortable: true },
+  // { name: 'Description', align: 'center', label: '活動介紹（英文）', field: row => row.description, sortable: true },
+  // { name: 'ChDescription', align: 'center', label: '活動介紹（中文）', field: row => row.CH_description, sortable: true },
   { name: 'DateStart', label: 'Category', field: row => row.dateStart, sortable: true },
   { name: 'DateEnd', label: 'Category', field: row => row.dateEnd, sortable: true },
   { name: 'edit', label: '編輯刪除', sortable: true }

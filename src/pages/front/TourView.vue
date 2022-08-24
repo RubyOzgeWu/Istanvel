@@ -9,65 +9,69 @@
     </div>
 
     <!-- info-------------------------------------------------------------------- -->
-    <div class="row content">
-        <div class="col-8 info" style="border:2px solid yellow">
-            <p class="title">{{tour.name}}</p>
-            <p class="description">{{tour.description}}</p>
+    <div class="background">
+        <div class="row content">
+          <div class="col-8 info" >
+              <p class="title">{{tour.name}}</p>
+              <p class="description">{{tour.description}}</p>
 
-            <table class="text-white">
-              <thead>
-                <th></th>
-                <th></th>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Included</td>
-                  <td>{{tour.included}}</td>
-                </tr>
-                <tr>
-                  <td>Departure Time</td>
-                  <td>{{tour.departureTime}}</td>
-                </tr>
-                <tr>
-                  <td>Departure Location</td>
-                  <td>{{tour.departureLocation}}</td>
-                </tr>
-                <tr>
-                  <td>Note</td>
-                  <td>{{tour.note}}</td>
-                </tr>
-              </tbody>
-            </table>
+              <table class="text-white table">
+                <thead>
+                  <th></th>
+                  <th></th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><p>Included</p></td>
+                    <td><p>{{tour.included}}</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Departure Time</p></td>
+                    <td><p>{{tour.departureTime}}</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Departure Location</p> </td>
+                    <td><p>{{tour.departureLocation}}</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Note</p></td>
+                    <td><p>{{tour.note}}</p></td>
+                  </tr>
+                </tbody>
+              </table>
 
-            <q-img src="../../assets/tours/Topkapi-Palace-3.jpg"></q-img>
+              <q-img :src="tour.image" class="image"></q-img>
 
-        </div>
-        <div class="col-4 order">
-            <q-form v-model="valid" @submit.prevent='submit'>
-                <!-- <q-input filled v-model="checkForm.name" label="Your name"  :rules="[ val => val && val.length > 0 || 'Please enter your name']"/> -->
-                <!-- <q-input filled v-model="checkForm.email" label="Your email"  :rules="emailRule"/> -->
-                <!-- <q-input filled v-model="checkForm.phone" label="Your phone number" /> -->
-                <q-input filled v-model="date" mask="date" :rules="['date']">
-                  <template v-slot:append>
-                    <q-icon name="event" class="cursor-pointer">
-                      <q-popup-proxy cover transition-show="scale" transition-hide="scale">
-                        <q-date v-model="date">
-                          <div class="row items-center justify-end">
-                            <q-btn v-close-popup label="Close" color="primary" flat />
-                          </div>
-                        </q-date>
-                      </q-popup-proxy>
-                    </q-icon>
-                  </template>
-                </q-input>
-                <q-input filled v-model.number="quantity" type="number" label="number of ticket"  :rules="quantityRule"/>
-                <!-- <q-input filled v-model="checkForm.message" type="textarea" label="leave us some messages" /> -->
-                <q-btn color="secondary" type="submit">add to the cart</q-btn>
-                <!-- <q-btn color="secondary" type="submit">click to order</q-btn> -->
+          </div>
+          <div class="col-4 order">
+              <h4>Package Options</h4>
+              <q-form v-model="valid" @submit.prevent='submit'>
+                  <!-- <q-input filled v-model="checkForm.name" label="Your name"  :rules="[ val => val && val.length > 0 || 'Please enter your name']"/> -->
+                  <!-- <q-input filled v-model="checkForm.email" label="Your email"  :rules="emailRule"/> -->
+                  <!-- <q-input filled v-model="checkForm.phone" label="Your phone number" /> -->
+                  <q-input filled v-model="date" mask="date" :rules="['date']">
+                    <template v-slot:append>
+                      <q-icon name="event" class="cursor-pointer">
+                        <q-popup-proxy cover transition-show="scale" transition-hide="scale">
+                          <q-date v-model="date">
+                            <div class="row items-center justify-end">
+                              <q-btn v-close-popup label="Close" color="primary" flat />
+                            </div>
+                          </q-date>
+                        </q-popup-proxy>
+                      </q-icon>
+                    </template>
+                  </q-input>
+                  <q-input filled v-model.number="quantity" type="number" label="number of ticket"  :rules="quantityRule"/>
+                  <!-- <q-input filled v-model="checkForm.message" type="textarea" label="leave us some messages" /> -->
+                  <q-btn color="secondary" type="submit" class="submit">add to the cart</q-btn>
+                  <!-- <q-btn color="secondary" type="submit">click to order</q-btn> -->
 
-            </q-form>
-        </div>
+              </q-form>
+          </div>
+      </div>
     </div>
+
 </div>
 </template>
 
