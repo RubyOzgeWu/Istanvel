@@ -49,16 +49,16 @@
 
     <!-- section03----------------------------------------------------------------------------------- -->
     <section id=section03>
-      <div class="row">
+      <div class="row" style="height:500px">
         <div class="col-7">
-          <q-img src="../../assets/turkish-breakfast-2.jpeg" style="max-width: 95%; height: 500px;" :fit="cover"></q-img>
+          <q-img src="../../assets/turkish-breakfast-banner.jpg" style="max-width: 95%; height: 500px;" :fit="cover"></q-img>
         </div>
-        <div class="col-5">
-          <div class="column">
-            <h3>Turkish Culture & Foods </h3>
-            <p class="post">
-              Turkish cuisine is one of the world’s top cuisines, joining the ranks of French, Chinese, Italian, and the like. Like the country’s cultural mosaic, the food of Turkey is very colorful and contains countless different influences and tastes. The cuisine of Turkey has continued to evolve over centuries, deriving influence from its rich history of lands that hosted first the Byzantine, and then the Ottoman Empires. Specific tastes in different regions of Turkey contribute to the complexity of the country’s cuisine. The availability of different Turkish food in some regions also helped to shape the foods common to that particular area. The Eastern Black Sea region, for example, is not appropriate for wheat production due to heavy rainfall; therefore the residents developed dishes that rely mostly on corn and cornflour.
-            </p>
+        <div class="col-4 marquee-w">
+          <div class="marquee first">
+            <span>Turkish Culture & Food</span>
+          </div>
+          <div class="marquee second">
+            <span>Turkish Culture & Food</span>
           </div>
         </div>
       </div>
@@ -158,7 +158,54 @@
 .q-pa-md {
   padding: 0;
 }
+.marquee{
+    position: absolute;
+    display: block;
+    width: 100%;
+    border: 1px solid;
+    overflow: hidden;
+    animation: marquee 20s linear infinite;
+    border: 2px solid red;
+}
+.marquee.second{
+    animation: marqueeNext 20s linear infinite;
+    animation-delay: -40s;
+    border: 2px solid yellow;
+}
+.marquee span{
+  display: inline-block;
+  white-space: nowrap;
+  min-width: 100%;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  text-decoration: none;
+  /* transform: translateX(50%); */
+  /* animation : marquee 7s linear infinite ; */
+}
 
+/* .marquee.second span{
+  animation-delay: -7s;
+} */
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marqueeNext {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
 </style>
 
 <script setup>
