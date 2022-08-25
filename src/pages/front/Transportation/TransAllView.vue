@@ -2,12 +2,13 @@
 <div class="q-pa-md" id="TransAllView">
   <!-- banner -->
     <div class="banner">
-        <q-img src="../../../assets/sultanahmet.jpg">
-            <div class="absolute-full text-subtitle2 flex column flex-center">
-            <h1>Transportation</h1>
-            <p>More easily to reach wherever you want to visit in Istanbul.</p>
-            </div>
-        </q-img>
+      <video autoplay loop class="video" style="object-fit: cover;" src="../../../assets/pexels-polina-kovaleva-7957382.mp4">
+        <source type="video/mp4">
+      </video>
+      <div class="absolute-full text-subtitle2 flex column flex-center">
+          <h1>Transportation</h1>
+          <p>More easily to reach wherever you want to visit in Istanbul.</p>
+      </div>
     </div>
     <!-- selections -->
     <div class="q-mx-auto selections" >

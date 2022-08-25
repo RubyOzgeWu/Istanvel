@@ -43,7 +43,7 @@
 
         .subtitle{
             position: absolute;
-            top: 40%;
+            top: 37%;
             left: 50%;
             width: 70%;
             transform: translateX(-50%);
@@ -71,54 +71,11 @@
         }
 
     }
-        // #banner {
-    //     width: 100%;
-    //     height: 100vh;
-    //     position: relative;
-    //     background: $primary;
-
-    //     .q-carousel {
-    //         position: absolute;
-    //         height: 90vh;
-    //         width: 100%;
-    //         // border: 2px solid yellow;
-
-    //         .q-carousel__slide {
-    //             .text-h1 {
-    //                 color: white;
-    //                 text-align: center;
-    //                 font-weight: 500;
-    //                 font-family: 'Ubuntu', sans-serif;
-    //                 margin-bottom: 40px;
-
-    //                 span {
-    //                     color: $secondary;
-    //                 }
-    //             }
-
-    //             .subtitle {
-    //                 color: white;
-    //                 text-align: center;
-    //                 font-family: 'Ubuntu', sans-serif;
-    //                 font-size: 1.75rem;
-    //                 padding-bottom: 100px;
-
-    //             }
-
-    //             .q-btn {
-    //                 left: 50%;
-    //                 transform: translateX(-50%);
-    //                 color: white;
-    //                 background-color: $secondary-lighter;
-    //                 margin-top: 50px;
-    //             }
-    //         }
-    //     }
-    // }
 
     // section02---------------------------
     #section02 {
-        padding-top: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
 
         h3 {
             color: white;
@@ -126,15 +83,16 @@
             font-family: 'Alegreya Sans SC', sans-serif;
             font-weight: 600;
             margin-bottom: 30px;
+            font-size: 2.5rem;
         }
 
-        p {
+        .intro {
             margin: auto;
             margin-bottom: 80px;
             max-width: 950px;
             color: white;
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-family: 'Ubuntu', sans-serif;
             font-weight: lighter;
         }
@@ -156,6 +114,24 @@
                     text-align: center;
                     font-size: 1.75rem;
                     line-height: 1.25;
+                    font-family: 'Alegreya Sans SC', sans-serif;
+                    font-weight: 700;
+
+                    a{
+                        display: block;
+                        color: #ffffff;
+                        text-decoration: none;
+
+                        &:hover{
+                            color: rgba($color: white, $alpha: 0.5);
+                            transition: all 0.3s;
+                        }
+
+                        &:active{
+                            text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+                            transition: all 0.1s;
+                        }
+                    }
                 }
             }
 
@@ -167,6 +143,7 @@
         background: #0D4190;
         padding: 0;
         height: 500px;
+        margin-bottom: 3.5%;
 
         .q-img {
             margin-right: 50px;
@@ -180,12 +157,13 @@
                 font-family: 'Alegreya Sans SC', sans-serif;
                 font-weight: 600;
                 margin-bottom: 30px;
+                font-size: 2.5rem;
             }
 
-            p {
+            .post {
                 color: white;
                 font-family: 'Ubuntu', sans-serif;
-                font-size: 1.5rem;
+                font-size: 1rem;
                 font-weight: lighter;
                 line-height: 1.5;
                 padding-right: 30px;
@@ -205,15 +183,17 @@
             font-family: 'Alegreya Sans SC', sans-serif;
             font-weight: 600;
             margin: 30px 0;
+            font-size: 2.5rem;
+
         }
 
-        p {
+        .intro {
             margin: auto;
             margin-bottom: 80px;
             max-width: 1000px;
             color: white;
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-family: 'Ubuntu', sans-serif;
             font-weight: lighter;
         }
@@ -223,6 +203,8 @@
 
             .row {
                 justify-content: center;
+                background-color: $primary;
+
 
                 .q-img {
                     margin: 0 30px;
