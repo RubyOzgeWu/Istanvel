@@ -20,6 +20,9 @@
       </q-tabs> -->
 
         <div v-if="$q.screen.gt.sm" class="GL__toolbar-link q-ml-xs q-gutter-md text-body2 text-weight-bold row items-center no-wrap">
+          <q-btn flat to="/" class="text-white">
+            home
+          </q-btn>
           <q-btn flat to="/BlogAll" class="text-white">
             blog
           </q-btn>

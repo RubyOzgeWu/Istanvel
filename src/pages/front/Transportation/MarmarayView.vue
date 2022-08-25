@@ -6,7 +6,7 @@
             <h2 class="text-left">Marmaray</h2>
             <p class="text-left "> The Marmaray is a 76.6 km-long intercontinental commuter rail line in Istanbul.<br>A rail tunnel under Bosphorus Strait connect European side and Asian side. </p>
           </div>
-          <q-select class="col-3 navigator" outlined v-model="navigator" @update:model-value="getType" :options="options"/>
+          <q-select class="col-xl-3 col-lg-3 col-md-3  col-xs-12 navigator" outlined v-model="navigator" @update:model-value="getType" :options="options"/>
     </div>
 
     <div class="q-pa-md row main">

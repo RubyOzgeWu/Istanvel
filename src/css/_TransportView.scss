@@ -1,73 +1,75 @@
 #TransportView{
-    height: calc(100vh - 51px);
+    // height: calc(100% - 51px);
+    height: 100vh;
     // border: 5px solid yellow;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 15%;
+    padding-right: 15%;
 // 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80
     .row.header{
         align-items: flex-end;
 
         .q-field__control{
-            margin-bottom: 20px;
+            margin-bottom: 4%;
             background: white;
             box-shadow: 2px 2px 8px rgba(66, 65, 65, 0.3);
         }
 
         .col-9{
             // padding-left: 10px;
-            padding-left: 40px;
+            padding-left: 3.5%;
 
             h2{
-                margin-top: 40px;
+                margin-top: 3%;
                 color: white;
                 font-family: 'Alegreya Sans SC', sans-serif;
                 font-weight: 700;
 
                 span{
                     color: $secondary-lighter;
-                    font-size: 68px;
+                    font-size: 4.25rem;
                     // line-height: 58px;
                     font-weight: 700;
                 }
         
             }
             p{
-                margin-top: 15px;
+                margin-top: 1.5%;
                 color: white;
                 font-family: 'Ubuntu', sans-serif;
-                font-size: 20px;
+                font-size: 1.25rem;
 
             }
         }
     }
     .q-pa-md.row{
         padding: 0;
-        margin-top: 20px;
+        margin-top: 1.5%;
 
         .showBox{
             // border: 5px solid lightblue;
+            margin-bottom: 5%;
             .q-tab-panels{
                 background: $primary;
                 height: 100%;
                 box-shadow: 1px 1px 3px rgb(0 0 0 / 0.3);
                 border-radius: 5px;
-                padding-top: 15px;
+                padding-top: .5%;
                 // margin: 0;
                 // border: 5px solid green;
                 .q-splitter{
                     .q-splitter__before{
                         width: 10%;
-                        padding-top: 35px;
-                        padding-left: 40px;
+                        padding-top: 3%;
+                        padding-left: 3%;
 
                         .q-tab{
                             background-color: $secondary;
-                            margin-bottom: 10px;
+                            margin-bottom: 5%;
                         }
                     }
                     .q-splitter__after{
                         .q-tab-panel{
-                            padding: 20px;
+                            padding: 2%;
                             #map{
                                 width: 90%; 
                                 height: 55vh;
@@ -84,7 +86,7 @@
                                   // border: 5px solid red;
                                     align-items: center;
                                     height: 55vh;
-                                    margin-bottom: 35px;
+                                    margin-bottom: 3%;
                                     overflow-y: scroll;
 
                                     .q-img{
@@ -112,5 +114,135 @@
         // }
     }
     
+
+}
+
+//------------------------------  M1 1440px-----------------------------------------
+@media(max-width:1440px){
+    #TransportView{
+        padding-left: 12%;
+        padding-right: 12%;
+        .row.header{
+            .col-9{
+                // padding-left: 10px;
+                padding-left: 3.5%;
+
+                p{
+                    margin-top: 1.5%;
+                    color: white;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 1rem;
+    
+                }
+            }
+        }
+    }
+
+}
+
+
+//------------------------------ iPad 1024px----------------------------------------
+@media(max-width:1024px){
+    #TransportView{
+        padding-left: 10%;
+        padding-right: 10%;
+        height: 100%;
+
+        .row.header{
+            .col-9{
+                // padding-left: 10px;
+                padding-left: 3.5%;
+
+                p{
+                    margin-top: 1.5%;
+                    color: white;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 1rem;
+    
+                }
+            }
+        }
+
+        .q-pa-md.row{
+    
+            .showBox{
+
+                .q-tab-panels{
+
+                    .q-splitter{
+                        .q-splitter__after{
+                            .q-tab-panel{
+                                #map{
+                                    width: 90%; 
+                                    height: 35vh;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+}
+
+// ------------------------------iPhone 600px*--------------------------
+@media(max-width:600px){
+    #TransportView{
+        padding-left: 3%;
+        padding-right: 3%;
+        height: 100%;
+
+        .row.header{
+            .col-9{
+                // padding-left: 10px;
+                padding-left: 3.5%;
+
+                h2{
+                    margin-top: 3%;
+                    font-size: 2.5rem;
+
+                }
+
+                p{
+                    margin-top: 0%;
+                    color: white;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: .5rem;
+    
+                }
+            }
+        }
+
+        .q-tab__label{
+            font-size: .5rem;
+        }
+
+        .q-pa-md.row{
+    
+            .showBox{
+
+                .q-tab-panels{
+
+                    .q-splitter{
+                        .q-splitter__after{
+                            .q-tab-panel{
+                                #map{
+                                    width: 90%; 
+                                    height: 35vh;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+    }
 
 }

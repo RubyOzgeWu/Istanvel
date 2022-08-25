@@ -6,54 +6,119 @@
     }
 
     // banner---------------------------
-    #banner {
+    .banner{
         width: 100%;
         height: 100vh;
+        padding: 0;
         position: relative;
-        background: $primary;
+    
 
-        .q-carousel {
-            position: absolute;
-            height: 90vh;
+        .video{
             width: 100%;
-            // border: 2px solid yellow;
+            height: 100%;
+        }
 
-            .q-carousel__slide {
-                .text-h1 {
-                    color: white;
-                    text-align: center;
-                    font-weight: 500;
-                    font-family: 'Ubuntu', sans-serif;
-                    margin-bottom: 40px;
+        .title {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+            font-weight: 500;
+            font-family: 'Ubuntu', sans-serif;
+            margin-bottom: 40px;
+            font-size: 5rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 
-                    span {
-                        color: $secondary;
-                    }
-                }
 
-                .subtitle {
-                    color: white;
-                    text-align: center;
-                    font-family: 'Ubuntu', sans-serif;
-                    font-size: 1.75rem;
-                    padding-bottom: 100px;
 
-                }
+            span {
+                color: $secondary;
+                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 
-                .q-btn {
-                    left: 50%;
-                    transform: translateX(-50%);
-                    color: white;
-                    background-color: $secondary-lighter;
-                    margin-top: 50px;
-                }
+
             }
         }
+
+        .subtitle{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            width: 70%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.75rem;
+            padding-bottom: 100px;
+            text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.2);
+        }
+
+        .q-btn {
+            position: absolute;
+            bottom: 28%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background-color: $secondary-lighter;
+            margin-top: 50px;
+            box-shadow: 6px 3px 12px 6px rgba($color: #000000, $alpha: .2);
+
+            &:active{
+                box-shadow: 8px 4px 16px 8px rgba($color: #000000, $alpha: .2);
+            }
+        }
+
     }
+        // #banner {
+    //     width: 100%;
+    //     height: 100vh;
+    //     position: relative;
+    //     background: $primary;
+
+    //     .q-carousel {
+    //         position: absolute;
+    //         height: 90vh;
+    //         width: 100%;
+    //         // border: 2px solid yellow;
+
+    //         .q-carousel__slide {
+    //             .text-h1 {
+    //                 color: white;
+    //                 text-align: center;
+    //                 font-weight: 500;
+    //                 font-family: 'Ubuntu', sans-serif;
+    //                 margin-bottom: 40px;
+
+    //                 span {
+    //                     color: $secondary;
+    //                 }
+    //             }
+
+    //             .subtitle {
+    //                 color: white;
+    //                 text-align: center;
+    //                 font-family: 'Ubuntu', sans-serif;
+    //                 font-size: 1.75rem;
+    //                 padding-bottom: 100px;
+
+    //             }
+
+    //             .q-btn {
+    //                 left: 50%;
+    //                 transform: translateX(-50%);
+    //                 color: white;
+    //                 background-color: $secondary-lighter;
+    //                 margin-top: 50px;
+    //             }
+    //         }
+    //     }
+    // }
 
     // section02---------------------------
     #section02 {
-        padding-top: 0;
+        padding-top: 5%;
 
         h3 {
             color: white;

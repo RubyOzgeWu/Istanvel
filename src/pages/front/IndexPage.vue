@@ -1,37 +1,17 @@
 <template>
   <div class="q-pa-md" id="IndexPage">
-    <div id="banner">
-      <q-carousel animated v-model="slide" navigation infinite :autoplay="autoplay" arrows transition-prev="slide-right"
-        transition-next="slide-left" @mouseenter="autoplay = false" @mouseleave="autoplay = true">
-        <q-carousel-slide :name="1" img-src="../../assets/galata.jpg">
-          <div class="absolute-center custom-caption">
-            <div class="text-h1">Welcome to <span>Istanbul</span></div>
-            <div class="subtitle">In the heart of two continents, hidden treasures for more than a thounsand
-              years,
-              the adventures of Istanbul are wating for you.</div>
-            <q-btn size="22px" class="q-px-xl q-py-xs" label="FIND NOW" />
-          </div>
-        </q-carousel-slide>
-        <q-carousel-slide :name="2" img-src="../../assets/kizkulesi.jpg">
-          <div class="absolute-center custom-caption">
-            <div class="text-h1">Welcome to <span>Istanbul</span></div>
-            <div class="subtitle">In the heart of two continents, hidden treasures for more than a thounsand
-              years,
-              the adventures of Istanbul are wating for you.</div>
-            <q-btn size="22px" class="q-px-xl q-py-xs" label="FIND NOW" />
-          </div>
-        </q-carousel-slide>
 
-        <q-carousel-slide :name="3" img-src="../../assets/sultanahmet.jpg">
-          <div class="absolute-center custom-caption">
-            <div class="text-h1">Welcome to <span>Istanbul</span></div>
-            <div class="subtitle">In the heart of two continents, hidden treasures for more than a thounsand
+    <!-- *********************************************************************** -->
+    <div class="banner ">
+      <video autoplay loop class="video" style="object-fit: cover;" src="../../assets/pexels-roman-odintsov-7304300.mp4">
+        <source type="video/mp4">
+      </video>
+      <div class="title">Welcome to <span>Istanbul</span></div>
+      <div class="subtitle">In the heart of two continents, hidden treasures for more than a thounsand
               years,
               the adventures of Istanbul are wating for you.</div>
-            <q-btn size="22px" class="q-px-xl q-py-xs" label="FIND NOW" />
-          </div>
-        </q-carousel-slide>
-      </q-carousel>
+      <q-btn size="22px" class="q-px-xl q-py-xs" label=" EXPLORE NOW" />
+
     </div>
 
     <!-- section02 -------------------------------------------------------------------------------------------->
@@ -192,20 +172,12 @@
 </style>
 
 <script>
-import { defineComponent, ref } from 'vue'
+import { ref } from 'vue'
+const slide = ref(1)
 
-export default defineComponent({
-  name: 'IndexPage',
-  setup() {
-    return {
-      slide: ref(1)
-      // autoplay: ref(true)
-      // fitModes: ['cover', 'fill', 'contain', 'none', 'scale-down']
+// const loof = ref(true)
+// fitModes: ['cover', 'fill', 'contain', 'none', 'scale-down']
 
-      // autoplay: ref(true)
+// autoplay: ref(true)
 
-    }
-  }
-
-})
 </script>

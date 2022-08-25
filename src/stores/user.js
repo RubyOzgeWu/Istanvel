@@ -366,6 +366,17 @@ export const useUserStore = defineStore({
           text: '加入資訊失敗'
         })
       }
+    },
+    async getUser () {
+      if (this.token.length === 0) return
+      try {
+        const { data } = await apiAuth.get('/users')
+        this.account = data.result.account
+        this.role = data.result.role
+        this.cart = data.result.cart
+      } catch (error) {
+        this.logout()
+      }
     }
     // async updateOrderInfo (data) {
     //   try {
@@ -381,5 +392,9 @@ export const useUserStore = defineStore({
     //     return false
     //   }
     // }
+  },
+  persist: {
+    key: 'vite-shop',
+    paths: ['token']
   }
 })

@@ -6,7 +6,7 @@
             <h2 class="text-left">Tramvay</h2>
             <p class="text-left ">There are 5 tram lines in Istanbul.<br>Most of popular sites in Istanbul are on T1 and T5. </p>
           </div>
-          <q-select class="col-3 navigator" outlined v-model="navigator" @update:model-value="getType" :options="options"/>
+          <q-select class="col-xl-3 col-lg-3 col-md-3 col-xs-12 navigator" outlined v-model="navigator" @update:model-value="getType" :options="options"/>
     </div>
 
     <div class="q-pa-md row main">

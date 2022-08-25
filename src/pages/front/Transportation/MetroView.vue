@@ -6,7 +6,7 @@
             <h2 class="text-left">Metro </h2>
             <p class="text-left ">There are 11 metro lines in Istanbul.<br>Taking the M2 line can reach most of popular sites in Istanbul. </p>
           </div>
-          <q-select class="col-3 navigator" outlined v-model="navigator" @update:model-value="getType" :options="options"/>
+          <q-select class="col-xl-3 col-lg-3 col-md-3 col-xs-12 navigator" outlined v-model="navigator" @update:model-value="getType" :options="options"/>
     </div>
 
     <div class="q-pa-md row main">

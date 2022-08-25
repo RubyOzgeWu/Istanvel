@@ -3,9 +3,11 @@
 </template>
 
 <script setup>
-import { defineComponent } from 'vue'
+import { useUserStore } from '../src/stores/user'
+useUserStore().getUser()
+// import { defineComponent } from 'vue'
 
-defineComponent({
-  name: 'App'
-})
+// defineComponent({
+//   name: 'App'
+// })
 </script>

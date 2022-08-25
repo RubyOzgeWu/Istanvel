@@ -1,0 +1,43 @@
+//------------------ iPad 1024px---------------------
+@media(max-width:1024px){
+    #TransCard{
+            flex-direction: column;
+
+            .left{
+                width: 100%;
+            }
+
+            .right{
+                margin-top: 5%;
+                width: 100%;
+
+                .col{
+                    padding: 0 5%;
+                    width: 100%;
+                }
+            }
+        
+    }
+}
+
+//---------------------iPhone 600px-----------------------------------------
+@media(max-width: 600px){
+    #TransCard{
+        flex-direction: column;
+
+        .left{
+            width: 100%;
+        }
+
+        .right{
+            margin-top: 5%;
+            width: 100%;
+
+            .col{
+                padding: 0 5%;
+                width: 100%;
+            }
+        }
+    
+}
+}

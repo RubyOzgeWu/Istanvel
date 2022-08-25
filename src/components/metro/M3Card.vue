@@ -1,6 +1,6 @@
 <template>
 <div class="row card">
-  <div class="col-8 column left">
+  <div class="col-8 column left" id="TransCard">
     <div id="map" />
   </div>
   <div class="col-4 column right">

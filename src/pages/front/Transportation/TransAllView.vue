@@ -2,7 +2,7 @@
 <div class="q-pa-md" id="TransAllView">
   <!-- banner -->
     <div class="banner">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+        <q-img src="../../../assets/sultanahmet.jpg">
             <div class="absolute-full text-subtitle2 flex column flex-center">
             <h1>Transportation</h1>
             <p>More easily to reach wherever you want to visit in Istanbul.</p>
@@ -10,67 +10,157 @@
         </q-img>
     </div>
     <!-- selections -->
-    <div class="q-mx-auto selections">
-      <div class="q-pa-md row items-start q-gutter-md">
-        <q-card class="my-card row" @click="goMetro">
-            <q-card-section class="col column">
-              <q-icon name="train" size="140px" color="white"/>
-              <div class="text-h6">Metro</div>
+    <div class="q-mx-auto selections" >
+      <div class="q-pa-md row items-center selectionBox ">
+      <!-- metro -->
+        <q-card class="my-card row selection q-mx-xl-xl q-mx-lg-lg  q-mx-md-md q-mx-sm-sm" @click="goMetro" data-aos="fade-right" data-aos-offset="20">
+            <q-card-section class="category col-3 col-xs-12 column">
+              <q-icon name="train" size="140px" color="white" class="icon col-xl-7 col-lg-8 col-md-7 col-sm-7 col-xs-6" />
+              <div class="text-h6 title col-xl-5 col-lg-5 col-md-5 col-sm-5" >Metro</div>
             </q-card-section>
         </q-card>
-        <q-card class="my-card row " @click="goTram">
-            <q-card-section class="col column">
-              <q-icon  name="tram" size="140px" color="white"/>
-              <div class="text-h6">Tram</div>
+
+      <!-- tramvay -->
+        <q-card class="my-card row selection q-mx-xl-xl q-mx-lg-lg q-mx-md-md q-mx-sm-sm " @click="goTram">
+            <q-card-section class="category col-3 col-xs-12 column" >
+              <q-icon name="tram" size="140px" color="white" class="icon col-xl-7 col-lg-7 col-md-7 col-sm-7 col-xs-6" />
+              <div class="text-h6 title col-xl-5 col-lg-5 col-md-5 col-sm-5" >Tramvay</div>
             </q-card-section>
         </q-card>
-        <q-card class="my-card row" @click="goMarmaray">
-            <q-card-section class="col column">
-              <q-icon  name="directions_subway" size="140px" color="white"/>
-              <div class="text-h6">Marmaray</div>
+
+        <!-- marmaray -->
+        <q-card class="my-card row selection q-mx-xl-xl q-mx-lg-lg q-mx-md-md q-mx-sm-sm" @click="goMarmaray" data-aos="fade-left" data-aos-offset="20">
+            <q-card-section class="category col-3 col-xs-12 column" >
+              <q-icon name="directions_subway" size="140px" color="white"  class="icon col-xl-7 col-lg-7 col-md-7 col-sm-7 col-xs-6" />
+              <div class="text-h6 title col-xl-5 col-lg-5 col-md-5 col-sm-5" >Marmaray</div>
             </q-card-section>
         </q-card>
       </div>
     </div>
-    <!-- allMap -->
-    <div class="q-mx-auto allMap">
-      <div class="q-pa-md row">
-        <q-img src="../../../assets/transportation-line-map.jpg"></q-img>
-      </div>
-    </div>
+
     <!-- carousel -->
-    <div class="q-pa-md wrap">
-      <div class="q-mx-auto carousel">
-        <div class="q-pa-md">
-            <q-carousel
-              arrows
-              animated
-              v-model="slide"
-              height="500px"
-            >
-              <q-carousel-slide name="first" >
-                <div class="row">
-                  <div class="col imgBox">
-                    <q-img src="../../../assets/galata.jpg"></q-img>
-                  </div>
-                  <div class="col info">
-                    <h2>Galata</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda maxime ab ducimus dignissimos iste neque quae atque, delectus aperiam, voluptatum sint officia voluptatem mollitia necessitatibus! Ullam velit quod non molestias. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet odio magni velit placeat quasi magnam rerum molestiae sequi accusantium aspernatur laudantium mollitia inventore dolorum, incidunt necessitatibus nisi esse. Necessitatibus ut vitae tenetur nostrum quam magnam porro omnis dolorum! Eius sit saepe quo minima veritatis hic nisi impedit fugiat possimus vero? Tempore inventore asperiores dolor reiciendis ex ut quia assumenda et nam, totam voluptates a consectetur. Explicabo doloribus ea facere deserunt dolor cum autem eligendi fugiat? Dolorum in aspernatur nobis recusandae, molestias sapiente, dolorem sint, ex porro deserunt autem id repellendus. Dolore libero dolor cupiditate fugiat quas aliquam consequatur quam dignissimos?</p>
-                  </div>
-                </div>
-              </q-carousel-slide>
+    <div class="q-pa-md carouselBack">
+      <h4>Travel to where you want to go...</h4>
+        <q-carousel
+          v-model="slide"
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          swipeable
+          animated
+          control-color="white"
+          navigation
+          padding
+          arrows
+          height="300px"
+          class="large"
+          data-aos="flip-down"
+        >
+          <q-carousel-slide :name="1" class="column no-wrap">
+            <div class="row fit justify-around items-center no-wrap" >
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/galata.jpg" />
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/merveilleux.jpeg" />
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/sultanahmet.jpg" />
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide :name="2" class="column no-wrap">
+            <div class="row fit justify-around items-center no-wrap">
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/galata.jpg" />
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/merveilleux.jpeg" />
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/sultanahmet.jpg" />
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide :name="3" class="column no-wrap">
+            <div class="row fit justify-around items-center no-wrap">
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/galata.jpg" />
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/merveilleux.jpeg" />
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/sultanahmet.jpg" />
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide :name="4" class="column no-wrap">
+            <div class="row fit justify-around items-center no-wrap">
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/galata.jpg" />
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/merveilleux.jpeg" />
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/sultanahmet.jpg" />
+            </div>
+          </q-carousel-slide>
+        </q-carousel>
 
-              <q-carousel-slide name="second">
+        <q-carousel
+          v-if="$q.screen.lt.lg"
+          v-model="slide"
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          swipeable
+          animated
+          control-color="white"
+          navigation
+          padding
+          arrows
+          height="300px"
+          class="medium"
+        >
+          <q-carousel-slide :name="1" class="column no-wrap">
+            <div class="row fit justify-between items-center no-wrap" >
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/galata.jpg" />
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/merveilleux.jpeg" />
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide :name="2" class="column no-wrap">
+            <div class="row fit justify-start items-center no-wrap">
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/galata.jpg" />
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/merveilleux.jpeg" />
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide :name="3" class="column no-wrap">
+            <div class="row fit justify-start items-center q-col-gutter no-wrap">
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/galata.jpg" />
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/merveilleux.jpeg" />
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide :name="4" class="column no-wrap">
+            <div class="row fit justify-start items-center q-col-gutter no-wrap">
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/galata.jpg" />
+              <q-img class="rounded-borders col-4 full-heigh q-mx-sm" src="../../../assets/merveilleux.jpeg" />
+            </div>
+          </q-carousel-slide>
+        </q-carousel>
 
-              </q-carousel-slide>
-
-              <q-carousel-slide name="third" >
-
-              </q-carousel-slide>
-            </q-carousel>
-        </div>
+        <q-carousel
+          v-if="$q.screen.lt.md"
+          v-model="slide"
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          swipeable
+          animated
+          control-color="white"
+          navigation
+          padding
+          arrows
+          height="300px"
+          class="small"
+        >
+          <q-carousel-slide :name="1" class="column no-wrap">
+            <div class="row fit justify-between items-center no-wrap" >
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/galata.jpg" />
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide :name="2" class="column no-wrap">
+            <div class="row fit justify-start items-center no-wrap">
+                <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/merveilleux.jpeg" />
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide :name="3" class="column no-wrap">
+            <div class="row fit justify-start items-center q-col-gutter no-wrap">
+                <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/sultanahmet.jpg" />
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide :name="4" class="column no-wrap">
+            <div class="row fit justify-start items-center q-col-gutter no-wrap">
+              <q-img class="rounded-borders col-4 full-height q-mx-sm" src="../../../assets/galata.jpg" />
+            </div>
+          </q-carousel-slide>
+        </q-carousel>
       </div>
-    </div>
      <footer>
 
     </footer>
@@ -80,9 +170,13 @@
 <script setup>
 import { reactive, ref, computed, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init()
+
 const router = useRouter()
 
-const slide = ref('first')
+const slide = ref(1)
 const goMetro = () => {
   router.push('/metro')
 }
