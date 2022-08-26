@@ -18,16 +18,12 @@
         font-family: 'Ubuntu', sans-serif;
         font-size: 1.25rem;
 
-        // padding-top: 1%;
+        padding-bottom: 2%;
     }
 
     .photos{
         margin: 3% 18%;
         color: white;
-    }
-
-    .col{
-        // border: 1px solid yellow;
     }
 
     h4{
@@ -73,13 +69,32 @@
         padding: 10px;
     }
 
+    .galata,
+    .sultanAhmet{
+        .q-img{
+            height: 550px;
+        }
+    }
+
+    .dolmabahce,
+    .cistern{
+        .q-img{
+            height: 300px;
+        }
+    }
+
 
 
     // ************************ row3**************************************
     .suleymaniye,
     .misir{
         padding: 10px;
+
+        .q-img{
+            height: 400px;
+        }
     }
+
 
 }
 
@@ -104,14 +119,119 @@
         p{
             font-size: .75rem;
         }
+
+        //**************** row1 ***********************
+        .row1{
+            .q-img{
+                height: 300px;
+            }
+        }
+        .taksim{
+            .q-img{
+                height: 620px;
+            }
+        }
+
+        //***************** row2**************************
+        .galata,
+        .sultanAhmet{
+            .q-img{
+                height: 450px;
+            }
+        }
+        .dolmabahce,
+        .cistern{
+            .q-img{
+                height: 200px;
+            }
+        }
+
+        //***************** row3**************************
+        .suleymaniye,
+        .misir{
+            .q-img{
+                height: 300px;
+            }
+        }
     }
 }
 
 // ------------------------------ iPad 1024px --------------------------
 @media(max-width:1024px){
     #TopView{
+        .title{
+            padding-top: 6%;
+            font-size: 2.5rem;
+        }
+        .subtitle{
+            font-size: .75rem;
+            padding: 0% 8%;
+            padding-top: 2%;
+            padding-bottom: 3%;
+        }
         .photos{
             margin: 3% 5%;
         }
+
+        h4{
+            font-size: 1.5rem;
+            line-height: 1.25;
+        }
+
+        p{
+            font-size: .2rem;
+            line-height: 1;
+        }
+
+        //**************** row1 ***********************
+        .row1{
+            .q-img{
+                height: 200px;
+            }
+        }
+        .taksim{
+            .q-img{
+                height: 420px;
+            }
+        }
+
+        //***************** row2**************************
+        .galata,
+        .sultanAhmet{
+            .q-img{
+                height: 350px;
+            }
+        }
+
+        .dolmabahce,
+        .cistern{
+            .q-img{
+                height: 200px;
+            }
+        }
+
+        //***************** row3**************************
+        .suleymaniye,
+        .misir{
+            .q-img{
+                height: 250px;
+            }
+        }
+    }
+}
+
+//----------------------------- iPhone 600px ------------------------
+@media(max-width:600px){
+    #TopView{
+        .title{
+            padding-top: 10%;
+            font-size: 2rem;
+        }
+
+        .subtitle{
+            font-size: .5rem;
+            padding: 0 8%;
+        }
+
     }
 }
