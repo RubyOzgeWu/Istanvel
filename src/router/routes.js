@@ -152,6 +152,16 @@ const routes = [
           login: false,
           admin: false
         }
+      },
+      {
+        path: 'Top10',
+        name: 'Top10',
+        component: () => import('../pages/front/TopView.vue'),
+        meta: {
+          title: 'Istanvel | TOP10',
+          login: false,
+          admin: false
+        }
       }
     ]
   },

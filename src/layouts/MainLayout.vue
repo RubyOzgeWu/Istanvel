@@ -32,7 +32,7 @@
           <q-btn flat to="/TransportAll" class="text-white">
             transportation
           </q-btn>
-          <q-btn flat  class="text-white">
+          <q-btn flat to="/Top10" class="text-white">
             top 10
           </q-btn>
           <q-btn flat to="/ActivitiesAll"  class="text-white">
@@ -121,7 +121,7 @@
                     transportation
                   </q-item-section>
                 </q-item>
-                <q-item clickable v-ripple >
+                <q-item clickable v-ripple to="/Top10"  >
                   <q-item-section>
                     top10
                   </q-item-section>
