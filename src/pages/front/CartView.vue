@@ -1,5 +1,6 @@
 <template>
-  <div class="q-pa-md">
+  <div class="q-pa-md" id="CartView">
+    <h2 class="cartTitle">My Cart</h2>
     <q-stepper
       v-model="step"
       ref="stepper"
@@ -14,11 +15,12 @@
       >
         <q-table
           :grid="$q.screen.lt.md"
-          title="My Cart"
           :rows="rows"
           :columns="columns"
           row-key="quantity"
           :filter="filter"
+          hide-header
+          class="cart"
           >
           <template v-slot:item="card">
               <div
@@ -81,12 +83,12 @@
                   {{ edit.row.quantity}}
                   <q-btn @click='updateCart(edit.row._id, edit.row.quantity + 1)' variant="text">+</q-btn>
                   <!-- <q-btn @click="updateCart(edit.row._id, 0)">刪除</q-btn> -->
-                  <p>price: {{edit.row.tour?.price || edit.row.activity?.price * edit.row.quantity}} NTD</p>
+                  <p>price: {{edit.row.tour?.price * edit.row.quantity || edit.row.activity?.price * edit.row.quantity}} NTD</p>
               </q-td>
           </template>
           <template #body-cell-deleteIt="deleteIt">
               <q-td >
-                  <q-btn @click="updateCart(deleteIt.row._id, 0)">Delete</q-btn>
+                  <q-btn color="secondary" @click="updateCart(deleteIt.row._id, 0)">Delete</q-btn>
               </q-td>
           </template>
           <template #body-cell-image="image">
@@ -100,7 +102,7 @@
               </q-td>
           </template>
         </q-table>
-        <p>Total: {{totalPrice}} NTD</p>
+        <p class="total text-right">Total: {{totalPrice}} NTD</p>
       </q-step>
 
       <q-step
@@ -109,11 +111,12 @@
         icon="create_new_folder"
         :done="step > 2"
       >
+        <p class="title">Enter Info</p>
         <q-btn color="secondary"  @click="openDialog('')" :disabled=" hasInfo()">Enter Info</q-btn>
         <q-dialog v-model="form.dialog" persistent>
           <q-card style="min-width: 700px">
             <q-card-section>
-              <div class="text-h6">Enter info</div>
+              <div class="text-h5" style="font-weight: 700; color: #A10D48;">Enter info</div>
             </q-card-section>
 
             <q-card-section class="q-pt-none">
@@ -122,17 +125,28 @@
                 <q-input filled v-model="form.email" label="Your email" :rules="emailRule" />
                 <q-input filled v-model="form.phone" label="Your phone number" :rules="[ val => val && val.length > 0 || 'Please enter your phone number']"/>
                 <q-btn flat label="Cancel" v-close-popup />
-                <q-btn flat label="Save" type="submit" v-close-popup />
+                <q-btn flat label="Save" type="submit" color="secondary" v-close-popup />
               </q-form>
             </q-card-section>
           </q-card>
         </q-dialog>
-        <q-card class="my-card">
+        <q-card class="my-card info">
           <q-card-section>
             <div v-for="i in info" :key="i._id">
-              <p>Name: {{i.name}}</p>
-              <p>email: {{i.email}}</p>
-              <p>phone: {{i.phone}}</p>
+              <q-markup-table>
+                <tr>
+                  <td>Name</td>
+                  <td>{{i.name}}</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>{{i.email}}</td>
+                </tr>
+                <tr>
+                  <td>Phone</td>
+                  <td>{{i.phone}}</td>
+                </tr>
+              </q-markup-table>
               <q-btn  @click="openDialog(i._id)" flat>edit</q-btn>
             </div>
           </q-card-section>
@@ -144,7 +158,7 @@
         title="Check Out"
         icon="assignment"
       >
-        <q-card class="my-card">
+        <q-card class="my-card checkoutPage ">
             <q-card-section>
               <div v-for="i in info" :key="i._id">
                 <p>total: {{totalPrice}} NTD</p>
@@ -157,13 +171,15 @@
       </q-step>
       <template v-slot:navigation>
         <q-stepper-navigation>
-          <q-btn @click="$refs.stepper.next()" color="primary" :label="step === 4 ? 'Finish' : 'Continue'" />
+          <q-btn @click="$refs.stepper.next()" color="secondary" :label="step === 4 ? 'Finish' : 'Continue'" />
           <q-btn v-if="step > 1" flat color="primary" @click="$refs.stepper.previous()" label="Back" class="q-ml-sm" />
         </q-stepper-navigation>
       </template>
     </q-stepper>
   </div>
 </template>
+<style>
+</style>
 <script setup>
 import { ref, reactive, computed } from 'vue'
 import { apiAuth } from '../../boot/axios.js'
@@ -191,7 +207,7 @@ const rows = reactive([])
 
 const totalPrice = computed(() => {
   return rows.reduce((a, b) => {
-    return a + b.tour?.price || b.activity?.price * b.quantity
+    return a + (b.tour?.price || b.activity?.price) * b.quantity
   }, 0)
 })
 const filter = ref('')

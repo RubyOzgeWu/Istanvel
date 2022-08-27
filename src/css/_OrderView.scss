@@ -1,0 +1,82 @@
+#OrderView{
+    background: $primary;
+    height: 100vh;
+    padding: 5% 10%;
+
+    .orderTitle{
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+    }
+
+    .q-table{
+        th{
+            font-size: 1rem;
+            color: $secondary;
+            font-family: 'Ubuntu', sans-serif;
+            text-align: left;
+        }
+
+        td{
+            font-size: 1rem;
+            font-family: 'Ubuntu', sans-serif;
+            text-align: left;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+    }
+}
+
+//-------------------- 1440px ---------------------
+@media(max-width:1440px){
+    #OrderView{
+        .orderTitle{
+            font-size: 3rem;
+        }
+    }
+}
+
+//--------------------- iPad 1024px-----------------
+@media(max-width:1024px){
+    #OrderView{
+        padding: 8% 5%;
+        .q-table{
+            th{
+                font-size: .75rem;
+            }
+            td{
+                font-size: 0.5rem;
+            }
+        }
+
+    }
+}
+
+//-------------------- iPhone 600px -------------------
+@media(max-width:600px){
+    #OrderView{
+        .orderTitle{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .id{
+            text-decoration: underline;
+
+            &:hover{
+                color: $secondary;
+            }
+        }
+
+        .price{
+            font-size: .75rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 500;
+
+        }
+
+
+    }
+}

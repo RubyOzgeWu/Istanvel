@@ -103,3 +103,95 @@
         }
     }
 }
+
+//---------------------------- iPad 1024px----------------------
+@media(max-width:1024px){
+    #TourView{
+        .q-img{
+            height: 300px;
+        }
+
+        .content{
+            .info{
+                padding: 0 5%;
+
+                .image{
+                    height: 100%;
+                }
+            }
+            .order{
+                padding: 6% 0;
+                padding-right: 5%;
+
+                h4{
+                    margin-bottom: 18%;
+
+                }
+
+                .q-form{
+                    padding: 12% 5%;
+
+                    .submit{
+                        width: 80%;
+                        position: absolute;
+                        bottom: 10%;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                        span{
+                            font-size: 0.2rem;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+    }
+}
+
+//----------------------- iPhone 600px -------------------------
+@media(max-width:600px){
+    #TourView{
+        .q-img{
+            // width: 100%;
+            height: 200px;
+    
+            h2{
+                font-family: 'Alegreya Sans SC', sans-serif;
+                font-weight: 700;
+                color: white;
+                font-size: 2rem;
+            }
+        }
+        
+        .content{
+            .info{
+                .image{
+                    height: 10%;
+                }
+                .title{
+                    font-size: 1.75rem;
+                }
+            }
+
+            .order{
+                height: 100%;
+                padding: 5% 5%;
+
+                h4{
+                    margin-bottom: 8%;
+                }
+
+                .q-form{
+                    height: 80%;
+
+                }
+
+
+            }
+
+        }
+    }
+}

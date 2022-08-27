@@ -36,21 +36,21 @@
       <p class="intro">From Hagia Sophia to enjoying a cruise on the Bosphorus, all the things you have to know in your journey are
         here.</p>
       <div class="selections row">
-        <div class="col-4 col-md-12" data-aos="fade-right" data-aos-offset="30">
+        <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-right" data-aos-offset="30">
           <q-img src="../../assets/visa.jpg" class="rounded-borders" :fit="cover">
             <div class="absolute-full text-subtitle2 flex flex-center" data-aos="flip-up" data-aos-offset="30" data-aos-delay="200">
               <a href="https://www.evisa.gov.tr/en/" target="_blank">Visa & Entry</a>
             </div>
           </q-img>
         </div>
-        <div class="col-4 col-md-12" >
+        <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" >
           <q-img src="../../assets/tours.jpg" class="rounded-borders" :fit="cover">
             <div class="absolute-full text-subtitle2 flex flex-center" data-aos="flip-up" data-aos-offset="30" data-aos-delay="200">
               <router-link to="/ToursAll">Tours <br>in <br>Istanbul</router-link>
             </div>
           </q-img>
         </div>
-        <div class="col-4 col-md-12" data-aos="fade-left" data-aos-offset="30">
+        <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-left" data-aos-offset="30">
           <q-img src="../../assets/activities.jpg" class="rounded-borders" :fit="cover">
             <div class="absolute-full text-subtitle2 flex flex-center" data-aos="flip-up" data-aos-offset="30" data-aos-delay="200">
               <router-link to="/ActivitiesAll"> Activities <br>in <br>Istanbul</router-link>
@@ -109,80 +109,47 @@
         <h3>TOP 10 in Istanbul</h3>
         <p class="intro">Discover the most popular, the most amazing, or the most ancient sites in Istanbul!</p>
       </div>
-      <div class="q-pa-sm q-pa-md-lg">
-        <q-carousel v-model="slide" :autoplay="2500" infinite transition-prev="slide-right" transition-next="slide-left" swipeable animated
-          control-color="secondary" navigation padding arrows height="500px">
+      <div class="carousel q-pa-md">
+        <!-- :autoplay="2500"  q-pa-sm q-pa-md-lg  -->
+        <q-carousel
+          v-model="slide"
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          swipeable
+          animated
+          :autoplay="2500"
+          control-color="secondary"
+          navigation
+          padding
+          height="300px"
+          class="rounded-borders"
+        >
           <q-carousel-slide :name="1" class="column no-wrap">
-            <div class="row fit justify-center items-center q-gutter-xs q-col-gutter no-wrap">
-              <q-img class="rounded-borders col-3 col-sm-6 full-height" src="../../assets/top10/hagiasofia.jpg" style="max-width: 350px;
-            height: 500px;" :fit="cover">
-                <div class="absolute-bottom text-subtitle1 text-center">
-                  Hagia Sophia
-                </div>
-              </q-img>
-
-              <q-img class="rounded-borders col-3 col-sm-6 full-height" src="../../assets/top10/grandBazaar.jpg"
-                style="max-width: 350px; height: 500px;" :fit="cover">
-                <div class="absolute-bottom text-subtitle1 text-center">
-                  The Grand Bazaar
-                </div>
-              </q-img>
-              <q-img class="rounded-borders col-3 col-sm-6 full-height" src="../../assets/top10/top10_kizkulesi.jpg"
-                style="max-width: 350px; height: 500px;" :fit="cover">
-                <div class="absolute-bottom text-subtitle1 text-center">
-                  Kız Kulesi
-                </div>
-              </q-img>
-              <q-img class="rounded-borders col-3 col-sm-6 full-height" src="../../assets/top10/dolmabahce.jpg"
-                style="max-width: 350px; height: 500px;" :fit="cover">
-                <div class="absolute-bottom text-subtitle1 text-center">
-                  Dolmabahçe Palace
-                </div>
-              </q-img>
+            <div class="background row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+              <q-img class="rounded-borders col-xl-3 col-lg-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 full-height" src="../../assets/top10/hagiasofia.jpg" />
+              <q-img class="rounded-borders col-xl-3 col-lg-3 col-md-3 col-sm-3 full-height" src="../../assets/top10/dolmabahce.jpg" />
+              <q-img class="rounded-borders col-xl-3 col-lg-3 col-md-3 col-sm-3 full-height" src="../../assets/top10/grandBazaar.jpg" />
+              <q-img v-if="$q.screen.gt.sm" class="rounded-borders col-xl-3 col-lg-3 col-md-3 col-sm-3 full-height" src="../../assets/top10/top10_kizkulesi.jpg" />
             </div>
           </q-carousel-slide>
           <q-carousel-slide :name="2" class="column no-wrap">
-            <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-              <q-img class="rounded-borders col-3 col-sm-6 full-height" src="../../assets/top10/sultanahmet.jpg"
-                style="max-width: 350px; height: 500px;" :fit="cover" position="20% 45%">
-                <div class="absolute-bottom text-subtitle1 text-center">
-                  Blue Mosque
-                </div>
-              </q-img>
-              <q-img class="rounded-borders col-3 col-sm-6  full-height" src="../../assets/top10/taksim.jpg"
-                style="max-width: 350px; height: 500px;" :fit="cover">
-                <div class="absolute-bottom text-subtitle1 text-center">
-                  Taksim Square
-                </div>
-              </q-img>
-              <q-img class="rounded-borders col-3 col-sm-6 full-height" src="../../assets/top10/galata.jpg"
-                style="max-width: 350px; height: 500px;" :fit="cover" position="20% 45%">
-                <div class="absolute-bottom text-subtitle1 text-center">
-                  Galata Tower
-                </div>
-              </q-img>
-              <q-img class="rounded-borders col-3 col-sm-6 full-height" src="../../assets/top10/misircarsi.jpg"
-                style="max-width: 350px; height: 500px;" :fit="cover">
-                <div class="absolute-bottom text-subtitle1 text-center">
-                  Spice Bazaar
-                </div>
-              </q-img>
+            <div class="background row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+              <q-img class="rounded-borders col-xl-3 col-lg-3 col-md-3 col-sm-3 full-height" src="../../assets/top10/sultanahmet.jpg"/>
+              <q-img class="rounded-borders col-xl-3 col-lg-3 col-md-3 col-sm-3 full-height" src="../../assets/top10/taksim.jpg"/>
+              <q-img class="rounded-borders col-xl-3 col-lg-3 col-md-3 col-sm-3 full-height" src="../../assets/top10/cistern.jpg"/>
+              <q-img v-if="$q.screen.gt.sm" class="rounded-borders col-xl-3 col-lg-3 col-md-3 col-sm-3 full-height" src="../../assets/top10/galata.jpg"/>
             </div>
           </q-carousel-slide>
           <q-carousel-slide :name="3" class="column no-wrap">
-            <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-              <q-img class="rounded-borders col-3 col-sm-6 full-height" src="../../assets/top10/suleymaniye.jpg"
-                style="max-width: 350px; height: 500px;" :fit="cover">
-                <div class="absolute-bottom text-subtitle1 text-center">
-                  Süleymaniye Mosque
-                </div>
-              </q-img>
-              <q-img class="rounded-borders col-3 col-sm-6 full-height" src="../../assets/top10/cistern.jpg"
-                style="max-width: 350px; height: 500px;" :fit="cover">
-                <div class="absolute-bottom text-subtitle1 text-center">
-                  Basilica Cistern
-                </div>
-              </q-img>
+            <div class="background row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+              <q-img class="rounded-borders col-xl-4 col-lg-3 col-md-4 full-height" src="../../assets/top10/suleymaniye.jpg" />
+              <q-img class="rounded-borders col-xl-4 col-lg-3 col-md-4 full-height" src="../../assets/top10/misircarsi.jpg" />
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide v-if="$q.screen.lt.lg" :name="4" class="column no-wrap">
+            <div class="background row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+              <q-img class="rounded-borders col-xl-3 col-lg-3 col-md-4 full-height" src="../../assets/top10/top10_kizkulesi.jpg" />
+              <q-img class="rounded-borders col-xl-3 col-lg-3 col-md-4 full-height" src="../../assets/top10/galata.jpg"/>
             </div>
           </q-carousel-slide>
         </q-carousel>
@@ -190,9 +157,7 @@
     </section>
 
     <!-- footer---------------------------------------------------------------------------------------- -->
-    <footer>
 
-    </footer>
   </div>
 </template>
 
@@ -273,14 +238,4 @@ AOS.init()
 const slide = ref(1)
 const autoplay = ref(true)
 
-// export default defineComponent({
-//   name: 'IndexPage',
-//   setup() {
-//     return {
-//       slide: ref(1)
-
-//     }
-//   }
-
-// })
 </script>

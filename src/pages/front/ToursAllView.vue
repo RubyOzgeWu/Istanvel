@@ -12,7 +12,6 @@
 
     <div class="q-pa-md background">
         <div class="tours row">
-          <div class="col-12">123</div>
           <div class="col-12 row">
             <div class="col col-xl-3 col-sm-3 col-md-3 col-xs-6" v-for="tour in tours" :key="tour._id">
               <TourCard :tour="tour" id="TourCard"></TourCard>

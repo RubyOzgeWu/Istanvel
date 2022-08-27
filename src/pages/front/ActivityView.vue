@@ -3,7 +3,7 @@
     <div class="banner">
         <q-img :src="activity.image">
             <div class="absolute-full text-subtitle2 flex column flex-center">
-                <h2>{{activity.name}}</h2>
+                <h2 class="text-center">{{activity.name}}</h2>
             </div>
         </q-img>
     </div>

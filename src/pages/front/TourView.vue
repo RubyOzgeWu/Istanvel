@@ -1,9 +1,9 @@
 <template>
 <div class="q-pa-md" id="TourView">
     <div class="banner">
-        <q-img src="../../assets/tours/Topkapi-Palace-3.jpg">
+        <q-img :src="tour.image">
             <div class="absolute-full text-subtitle2 flex column flex-center">
-                <h2>{{tour.name}}</h2>
+                <h2 class="text-center">{{tour.name}}</h2>
             </div>
         </q-img>
     </div>
@@ -11,7 +11,7 @@
     <!-- info-------------------------------------------------------------------- -->
     <div class="background">
         <div class="row content">
-          <div class="col-8 info" >
+          <div class="col-sm-8 col-xs-12 info" >
               <p class="title">{{tour.name}}</p>
               <p class="description">{{tour.description}}</p>
 
@@ -43,7 +43,7 @@
               <q-img :src="tour.image" class="image"></q-img>
 
           </div>
-          <div class="col-4 order">
+          <div class="col-sm-4 col-xs-12 order">
               <h4>Package Options</h4>
               <q-form v-model="valid" @submit.prevent='submit'>
                   <!-- <q-input filled v-model="checkForm.name" label="Your name"  :rules="[ val => val && val.length > 0 || 'Please enter your name']"/> -->

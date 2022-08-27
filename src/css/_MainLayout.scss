@@ -63,6 +63,77 @@
         font-family: 'Alegreya Sans SC', sans-serif;
     }
 
+
+    //**************************** footer ******************************
+    footer{
+        // border: 2px solid red;
+        height: 200px;
+        background: $primary-lighter;
+        padding: 1.5% 10%;
+        
+        .footer{
+            // border: 2px solid yellow;
+            justify-content: space-between;
+            align-items: baseline;
+            font-family: 'Ubuntu', sans-serif;
+
+            .footerCol{
+                padding-left: 5%;
+                // align-items: baseline;
+            }
+
+            .footerLogo{
+                // border: 2px solid yellow;
+                
+                .q-icon{
+                    padding-bottom: 10%;
+                    margin-left: 0;
+                }
+    
+                span{
+                    font-family: 'Alegreya Sans SC', sans-serif;
+                    font-weight: 700;
+                    font-size: 2.5rem;
+                    color: white;
+                    margin-left: 1.5%;
+                }
+            }
+    
+            .footerIcons{
+                // border: 2px solid yellow;
+                font-size: 1.75rem;
+                padding-top: 3%;
+                padding-left: 3%;
+                
+                i{
+                    color: white;
+                    margin-right: 3%;
+                }
+            }
+
+            .contact{
+
+                p{
+
+                    i{
+                        margin-right: 1%;
+                    }
+                }
+
+                & p:nth-child(1){
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                }
+
+            }
+
+
+
+        }
+
+
+    }
+
 }
 
 
@@ -93,6 +164,28 @@
                 }
             }
         }
+
+        footer{
+            height: 250px;
+            padding: 5% 2%;
+
+            .footer{
+                .footerCol{
+                    padding-left: 5%;
+
+                }
+
+                .footerLogo{
+                    .q-icon{
+                        padding-bottom: 15%;
+                    }
+                }
+
+                .footerIcons{
+                    padding-left: 7%;
+                }
+            }
+        }
     }
 }
 
@@ -105,6 +198,34 @@
         }
         .router-link-active{
             padding-left: 0px;
+        }
+
+
+        footer{
+            padding: 3% 2%;
+            .footer{
+                .footerCol{
+                    padding-left: 3%;
+                }
+    
+                .footerLogo{
+                    // border: 2px solid yellow;
+                    
+                    .q-icon{
+                        padding-bottom: 10%;
+                        margin-left: 0;
+                    }
+        
+                    span{
+                        font-family: 'Alegreya Sans SC', sans-serif;
+                        font-weight: 700;
+                        font-size: 2rem;
+                        color: white;
+                        margin-left: 1.5%;
+                    }
+                }
+
+            }
         }
     }
 }

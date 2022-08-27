@@ -56,7 +56,7 @@ const init = async() => {
     post.title = data.result.title
     post.author = data.result.author
     post.content = data.result.content
-    post.date = new Date(data.result.date)
+    post.date = new Date(data.result.date).toLocaleDateString()
     post.image = data.result.image
     post.sell = data.result.sell
   } catch (error) {

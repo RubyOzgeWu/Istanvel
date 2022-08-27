@@ -78,6 +78,7 @@
     #section02 {
         margin-top: 8%;
         margin-bottom: 5%;
+        padding-top: 0;
 
         h3 {
             color: white;
@@ -86,12 +87,14 @@
             font-weight: 600;
             font-size: 2.5rem;
             line-height: 1.5;
+            margin-bottom: 1%;
         }
 
         .intro {
             margin: auto;
-            margin-bottom: 80px;
+            margin-bottom: 5.5%;
             max-width: 950px;
+            padding: 0 5%;
             color: white;
             text-align: center;
             font-size: 1.25rem;
@@ -105,7 +108,7 @@
             padding: 2.5% 15%;
             justify-content: space-around;
 
-            .col-4 {
+            .col{
                 max-width: 345px;
                 width: 30%;
 
@@ -153,7 +156,7 @@
         background: #0D4190;
         padding: 0;
         // height: 500px;
-        margin-bottom: 3.5%;
+        margin-bottom: 10%;
 
         .q-img {
             margin-right: 50px;
@@ -192,7 +195,8 @@
             text-align: center;
             font-family: 'Alegreya Sans SC', sans-serif;
             font-weight: 600;
-            margin: 30px 0;
+            // margin-top: 3%;
+            margin-bottom: 1% ;
             font-size: 2.5rem;
 
         }
@@ -208,33 +212,31 @@
             font-weight: lighter;
         }
 
-        .q-carousel__slides-container {
-            background-color: $primary;
-            padding-top: 1.5%;
+        .carousel{
+            padding: 0 10%;
+            margin-bottom: 5%;
 
-            .row {
-                justify-content: center;
-                background-color: $primary;
-
-
-                .q-img {
-                    margin: 0 3%;
-                }
-
-                .text-subtitle1{
-                    font-size: 1.5rem;
-                }
+            .background{
+                background: $primary;
+                padding: 0 8%;
             }
 
+            .q-carousel__slides-container {
+                background-color: $primary;
+    
+                .row {
+                    justify-content: center;
+    
+                    .q-img {
+                        margin: 0 30px;
+                    }
+                }
+    
+            }
         }
+
     }
 
-    // footer---------------------------
-    footer {
-        width: 100%;
-        height: 300px;
-        background: $primary-lighter;
-    }
 }
 
 
@@ -259,7 +261,7 @@
             .selections {
                 padding: 0 8%;
 
-                .col-4{
+                .col{
                     width: 25%;
                 }
             }
@@ -272,6 +274,15 @@
 
             }
 
+        }
+
+        //  section04-------------------------
+        #section04{
+            .carousel{
+                .background{
+                    padding: 0 15%;
+                }
+            }
         }
     }
 }
@@ -348,16 +359,16 @@
             margin-bottom: 3%;
 
             h3{
-                font-size: 1.5rem;
-                margin-bottom: 0;
+                font-size: 1.75rem;
             }
             .intro{
-                font-size: .75rem;
+                font-size: 1rem;
             }
 
             .selections{
                 justify-content: center;
-                .col-4{
+                padding: 0 20%;
+                .col{
                     width: 100%;
                     margin-bottom: 5%;
 
@@ -386,16 +397,23 @@
         // section04----------------------------------
         #section04{
             margin-top: 0;
+            padding-bottom: 5%;
 
             h3{
-                color: yellow;
-                font-size: 1.5rem;
+                font-size: 1.75rem;
             }
             .intro{
-                margin-top: -3%;
                 margin-bottom: 5%;
-                font-size: .75rem;
+                font-size: 1rem;
+                margin-bottom: 8%;
             }
+            .carousel{
+                padding: 0 0;
+                .background{
+                    padding: 0 0;
+                }
+            }
+
         }
     }
 }
@@ -431,18 +449,19 @@
         #section02{
             padding-bottom: 0;
             h3{
-                font-size: 1rem;
-                margin-bottom: 0;
+                font-size: 1.25rem;
                 padding-top: 5%;
+                margin-bottom: 1.75%;
             }
             .intro{
-                margin-top: -3%;
                 margin-bottom: 12%;
                 padding:0 8%;
                 font-size: .5rem;
             }
             .selections{
-                .col-4{
+                padding: 0 10%;
+
+                .col{
                     width: 100%;
                     margin-bottom: 15%;
 

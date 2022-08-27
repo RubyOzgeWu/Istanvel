@@ -11,7 +11,6 @@
 
     <div class="q-pa-md background">
       <div class="tours row">
-        <div class="col-12">123</div>
         <div class="col-12 row">
           <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-6 " v-for="activity in activities" :key="activity._id">
             <ActivityCard :activity="activity" id="ActivityCard"></ActivityCard>

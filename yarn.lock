@@ -219,6 +219,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mdi/font@npm:^7.0.96":
+  version: 7.0.96
+  resolution: "@mdi/font@npm:7.0.96"
+  checksum: 3bc71dc45e784af98fc41ff58eedd77b7ec93fdd5ad2ea599914efd7eff0412db97e4d1766ae3abb55d90a39e5e6dbc550ffe36c72fa504d5b2b021b5aa16f8e
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1547,6 +1554,15 @@ aos@next:
   dependencies:
     esutils: ^2.0.2
   checksum: fd7673ca77fe26cd5cba38d816bc72d641f500f1f9b25b83e8ce28827fe2da7ad583a8da26ab6af85f834138cf8dae9f69b0cd6ab925f52ddab1754db44d99ce
+  languageName: node
+  linkType: hard
+
+"dom7@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "dom7@npm:4.0.4"
+  dependencies:
+    ssr-window: ^4.0.0
+  checksum: b38604f74e915b4d05b6634f9ff239a708c468180f498a28ff67f2a61233697d9bd7192703b788a24541c3591e7f1a6e83a2cbf70bc871a85e033f82e19abc31
   languageName: node
   linkType: hard
 
@@ -4278,6 +4294,7 @@ aos@next:
     "@fawmi/vue-google-maps": ^0.9.72
     "@googlemaps/js-api-loader": ^1.14.3
     "@intlify/vite-plugin-vue-i18n": ^3.3.1
+    "@mdi/font": ^7.0.96
     "@quasar/app-vite": ^1.0.6
     "@quasar/extras": ^1.15.1
     "@vue-leaflet/vue-leaflet": ^0.6.1
@@ -4296,6 +4313,7 @@ aos@next:
     pinia-plugin-persistedstate: ^1.6.3
     quasar: ^2.7.6
     sweetalert2: ^11.4.24
+    swiper: ^8.3.2
     validator: ^13.7.0
     vue: ^3.0.0
     vue-i18n: ^9.0.0
@@ -4791,6 +4809,13 @@ aos@next:
   languageName: node
   linkType: hard
 
+"ssr-window@npm:^4.0.0, ssr-window@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "ssr-window@npm:4.0.2"
+  checksum: df182600927f4f3225224cf8c02338ea637c9750519505bbfb9a9236741a2a7ec088386fb948bca7b447b8303d9109e7dc7672e3de041c79ac2a0e03665af7d2
+  languageName: node
+  linkType: hard
+
 "ssri@npm:^9.0.0":
   version: 9.0.1
   resolution: "ssri@npm:9.0.1"
@@ -4910,6 +4935,16 @@ aos@next:
   version: 11.4.29
   resolution: "sweetalert2@npm:11.4.29"
   checksum: a3fe80e7585bef06f1ba3c52a7f636e771743ec00edca374d105e43990b5543822fa3b74174aa77d157edbf301e2d7a1b85cd69831b851ad2f1a7a5702d10be8
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^8.3.2":
+  version: 8.3.2
+  resolution: "swiper@npm:8.3.2"
+  dependencies:
+    dom7: ^4.0.4
+    ssr-window: ^4.0.2
+  checksum: 881d8e4fdedc391593c9ecee1ca0fddaebd16b2f6be493f80869fbaf848761cf7e41a7d7ba4b9fe4c4d61e9bef87ba33154d22bb6a8a8503c22c49f793bef1c1
   languageName: node
   linkType: hard
 

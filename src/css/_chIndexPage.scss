@@ -1,4 +1,4 @@
-#IndexPage {
+#cIndexPage {
     background: $primary;
 
     section {
@@ -54,50 +54,50 @@
     }
 
     // section02---------------------------
-    #section02 {
-        padding-top: 0;
+    // #section02 {
+    //     padding-top: 0;
 
-        h3 {
-            color: white;
-            text-align: center;
-            font-family: 'Noto Sans TC', sans-serif;
-            font-weight: 600;
-            margin-bottom: 30px;
-        }
+    //     h3 {
+    //         color: white;
+    //         text-align: center;
+    //         font-family: 'Noto Sans TC', sans-serif;
+    //         font-weight: 600;
+    //         margin-bottom: 30px;
+    //     }
 
-        p {
-            margin: auto;
-            margin-bottom: 80px;
-            max-width: 950px;
-            color: white;
-            text-align: center;
-            font-size: 1.5rem;
-            font-family: 'Noto Sans TC', sans-serif;
-            font-weight: lighter;
-        }
+    //     p {
+    //         margin: auto;
+    //         margin-bottom: 80px;
+    //         max-width: 950px;
+    //         color: white;
+    //         text-align: center;
+    //         font-size: 1.5rem;
+    //         font-family: 'Noto Sans TC', sans-serif;
+    //         font-weight: lighter;
+    //     }
 
-        .q-col-gutter-md {
-            padding: 0 200px;
-            justify-content: center;
+    //     .q-col-gutter-md {
+    //         padding: 0 200px;
+    //         justify-content: center;
 
-            .col-4 {
-                max-width: 345px;
-                margin: 0 60px;
+    //         .col-4 {
+    //             max-width: 345px;
+    //             margin: 0 60px;
 
-                .q-btn {
-                    width: 345px;
-                    height: 400px;
-                }
+    //             .q-btn {
+    //                 width: 345px;
+    //                 height: 400px;
+    //             }
 
-                .absolute-full {
-                    text-align: center;
-                    font-size: 1.75rem;
-                    line-height: 1.25;
-                }
-            }
+    //             .absolute-full {
+    //                 text-align: center;
+    //                 font-size: 1.75rem;
+    //                 line-height: 1.25;
+    //             }
+    //         }
 
-        }
-    }
+    //     }
+    // }
 
     // section03---------------------------
     #section03 {
@@ -155,24 +155,24 @@
             font-weight: lighter;
         }
 
-        .q-carousel__slides-container {
-            background-color: $primary;
+        // .q-carousel__slides-container {
+        //     background-color: $primary;
 
-            .row {
-                justify-content: center;
+        //     .row {
+        //         justify-content: center;
 
-                .q-img {
-                    margin: 0 30px;
-                }
-            }
+        //         .q-img {
+        //             margin: 0 30px;
+        //         }
+        //     }
 
-        }
+        // }
     }
 
     // footer---------------------------
-    footer {
-        width: 100%;
-        height: 300px;
-        background: $primary-lighter;
-    }
+    // footer {
+    //     width: 100%;
+    //     height: 300px;
+    //     background: $primary-lighter;
+    // }
 }

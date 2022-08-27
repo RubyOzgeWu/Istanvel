@@ -1,0 +1,125 @@
+#CartView{
+    background: $primary;
+    height: 100vh;
+    padding: 5% 10%;
+
+    .cartTitle{
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+    }
+
+    .cart{
+        border: 3px solid $secondary;
+        font-family: 'Ubuntu', sans-serif;
+
+
+    }
+
+
+    .q-table__top{
+        justify-content: center;
+
+        .q-table__title{
+            font-size: 2rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 500;
+            color: $secondary;
+            align-self: center;
+        }
+    }
+
+
+    .total{
+        font-size: 2rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        color: $secondary;
+    }
+
+    .title{
+        font-size: 2rem;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        color: $secondary;
+    }
+
+    .checkoutPage p:nth-child(1){
+        font-size: 2rem;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        color: $secondary;
+    }
+
+    .checkoutPage p:nth-child(2){
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .info{
+        .q-table{
+            // background: $primary-lighter;
+            border: 3px dashed $secondary;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1rem;
+        }
+
+        .q-btn{
+            margin-top: 2%;
+            color: $primary;
+        }
+    }
+
+}
+
+// ------------------------- M1 1440px ---------------------
+@media(max-width:1440px){
+    #CartView{
+        .cartTitle{
+            font-size: 3rem;
+        }
+
+        .total{
+            font-size: 1.5rem;
+        }
+
+        .title{
+            font-size: 1.75rem;
+        }
+
+        .checkoutPage p:nth-child(1){
+            font-size: 1.75rem;
+        }
+        .checkoutPage p:nth-child(2){
+            font-size: 1.25rem;
+        }
+    }
+}
+
+//-------------- iPhone 600px ------------------------
+@media(max-width:600px){
+    #CartView{
+        .cartTitle{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .q-stepper__header{
+            display: none;
+        }
+        .total{
+            font-size: 1.25rem;
+        }
+        .title{
+            font-size: 1.5rem;
+        }
+        .checkoutPage p:nth-child(1){
+            font-size: 1.25rem;
+        }
+        .checkoutPage p:nth-child(2){
+            font-size: 1rem;
+        }
+
+    }
+}
