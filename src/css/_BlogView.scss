@@ -3,13 +3,18 @@
     padding: 0;
 
     .q-img{
-        height: 300px;
+        height: 400px;
+    }
+    .q-pa-md{
+        padding-bottom: 10%;
+
     }
 
     .my-card{
         background: white;
         margin: 0 15%;
         margin-top: -15%;
+        // margin-bottom: 10%;
 
         .q-card__section{
             padding: 0 10%;
@@ -60,7 +65,11 @@
 @media(max-width:1024px){
     #BlogView{
         .q-img{
-            height: 350px;
+            height: 300px;
+        }
+
+        .q-pa-md{
+            padding-bottom: 15%;
         }
     
         .my-card{
@@ -102,9 +111,13 @@
 @media(max-width:600px){
     #BlogView{
         .q-img{
-            height: 300px;
+            height: 250px;
         }
     
+        .q-pa-md{
+            padding-bottom: 20%;
+        }
+
         .my-card{
             margin: 0;
             margin-top: -65%;

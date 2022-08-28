@@ -89,7 +89,7 @@ const user = useUserStore()
 
 const tour = reactive({
   _id: '',
-  name: '123',
+  name: '',
   description: '',
   departureLocation: '',
   departureTime: '',

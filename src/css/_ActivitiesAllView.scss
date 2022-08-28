@@ -25,6 +25,7 @@
         max-width: 1400px;
         // margin: 0 15%;
         margin: auto;
+        padding-bottom: 5%;
     }
 
     .activities{
@@ -109,9 +110,11 @@
         .background{
             background: $primary;
             margin: 0 3%;
+            padding-bottom: 15%;
+
 
         }
-        .tours{
+        .activities{
             .row{
                 .col{
                     width: 50%;

@@ -60,7 +60,7 @@ const user = useUserStore()
 
 const activity = reactive({
   _id: '',
-  name: '123',
+  name: '',
   description: '',
   location: '',
   dateStart: '',
