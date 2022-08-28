@@ -5,7 +5,7 @@
   </div>
   <div class="col-4 column right">
     <div class="col">
-      <q-img src="../../assets/metro/Istanbul_Atatürk_Olympic_Stadium_1.jpeg"></q-img>
+      <q-img src="../../assets/metro/ataturkStadium.jpeg"></q-img>
       <h5>2. Atatürk Olympic Stadium</h5>
       <p>It is the largest-capacity stadium in the country, and is named after Mustafa Kemal Atatürk.</p>
     </div>
