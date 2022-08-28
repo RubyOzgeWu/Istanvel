@@ -83,13 +83,14 @@
                 }
                 .q-form{
                     padding: 10% 5%;
-                    height: 22%;
+                    height: 300px;
                     background: white;
                     border-radius: 10px;
                     box-shadow: 1px 1px 3px 1px rgba(41, 40, 40, 0.3);
                     text-align: center;
 
                     .submit{
+                        width: 60%;
                         position: absolute;
                         bottom: 10%;
                         left: 50%;
@@ -104,6 +105,39 @@
         }
     }
 }
+
+//----------------------------- 1440 px ------------------------
+@media(max-width:1440px){
+    #TourView{
+
+        .background{
+            .content{
+                .order{
+    
+                    .q-form{
+                        padding: 12% 5%;
+
+                        .submit{
+                            position: absolute;
+                            bottom: 10%;
+                            left: 50%;
+                            transform: translateX(-50%);
+    
+                            span{
+                                font-size: .75rem;
+                            }
+                        }
+    
+                    }
+                }
+    
+            }
+
+        }
+
+    }
+}
+
 
 //---------------------------- iPad 1024px----------------------
 @media(max-width:1024px){
@@ -132,7 +166,7 @@
     
                     .q-form{
                         padding: 12% 5%;
-                        
+
                         .submit{
                             width: 80%;
                             position: absolute;
