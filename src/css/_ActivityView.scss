@@ -98,42 +98,88 @@
             height: 300px;
         }
 
-        .content{
-            .info{
-                padding: 0 5%;
-
-                .image{
-                    height: 100%;
-                }
-            }
-            .order{
-                padding: 6% 0;
-                padding-right: 5%;
-
-                h4{
-                    margin-bottom: 18%;
-
-                }
-
-                .q-form{
-                    padding: 12% 5%;
-
-                    .submit{
-                        width: 80%;
-                        position: absolute;
-                        bottom: 10%;
-                        left: 50%;
-                        transform: translateX(-50%);
-
-                        span{
-                            font-size: 0.2rem;
-                        }
+        .background{
+            .content{
+                .info{
+                    padding: 0 5%;
+    
+                    .image{
+                        height: 100%;
                     }
-
                 }
+                .order{
+                    padding: 6% 0;
+                    padding-right: 5%;
+    
+                    h4{
+                        margin-bottom: 18%;
+    
+                    }
+    
+                    .q-form{
+                        padding: 12% 5%;
+
+                        .submit{
+                            width: 80%;
+                            position: absolute;
+                            bottom: 10%;
+                            left: 50%;
+                            transform: translateX(-50%);
+    
+                            span{
+                                font-size: 0.5rem;
+                            }
+                        }
+    
+                    }
+                }
+    
             }
 
         }
+
+        // .background{
+        //     .content{
+        //         .info{
+        //             padding: 0 5%;
+    
+        //             .image{
+        //                 height: 100%;
+        //             }
+        //         }
+        //         .order{
+        //             padding: 6% 0;
+        //             padding-right: 5%;
+    
+        //             h4{
+        //                 margin-bottom: 18%;
+    
+        //             }
+    
+        //             .q-form{
+        //                 padding: 12% 5%;
+        //                 padding-bottom: 5%;
+    
+        //                 .submit{
+        //                     width: 80%;
+        //                     position: absolute;
+        //                     bottom: 10%;
+        //                     left: 50%;
+        //                     transform: translateX(-50%);
+    
+        //                     span{
+        //                         font-size: .5rem;
+        //                     }
+        //                 }
+    
+        //             }
+        //         }
+    
+        //     }
+
+        // }
+
+
 
     }
 }
@@ -154,33 +200,39 @@
         }
 
 
-        .content{
-            .info{
-                .image{
-                    height: 10%;
+        .background{
+            .content{
+                .info{
+                    .image{
+                        height: 10%;
+                    }
+                    .title{
+                        font-size: 1.75rem;
+                    }
                 }
-                .title{
-                    font-size: 1.75rem;
+    
+                .order{
+                    height: 100%;
+                    padding: 5% 5%;
+    
+                    h4{
+                        margin-bottom: 8%;
+                    }
+    
+                    .q-form{
+                        height: 80%;
+                        padding: 10% 5%;
+                        padding-bottom: 25%;
+
+                    }
+    
+    
                 }
-            }
-
-            .order{
-                height: 100%;
-                padding: 5% 5%;
-
-                h4{
-                    margin-bottom: 8%;
-                }
-
-                .q-form{
-                    height: 80%;
-
-                }
-
-
+    
             }
 
         }
+ 
 
     }
 }
