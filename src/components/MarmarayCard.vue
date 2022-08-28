@@ -5,33 +5,14 @@
   </div>
   <div class="col-4 column right">
     <div class="col">
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-      <h2>hagia sophia</h2>
-      <p>Hagia Sophia is the most popular site in Istanbul</p>
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-            <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-            <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
+      <q-img src="../assets/marmaray/maxresdefault.jpeg"></q-img>
+      <h5>1. Pendik Coast</h5>
+      <p>You can walking, cycling with sea views on the coast.</p>
+
+      <q-img src="../assets/marmaray/Monastery-of-Stoudios-Ruins.jpg"></q-img>
+      <h5>3. Monastery of Stoudios</h5>
+      <p>It was the most important monastery in the history of Constantinople, the capital of the Byzantine Empire.</p>
+
     </div>
   </div>
 

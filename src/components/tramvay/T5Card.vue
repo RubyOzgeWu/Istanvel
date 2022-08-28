@@ -5,33 +5,30 @@
   </div>
   <div class="col-4 column right">
     <div class="col">
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-      <h2>hagia sophia</h2>
-      <p>Hagia Sophia is the most popular site in Istanbul</p>
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-            <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-            <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
+      <q-img src="../../assets/tramvay/GulMosque.jpeg"></q-img>
+      <h5>1. Gül Mosque</h5>
+      <p>This is one of the most important surviving Byzantine religious buildings in Constantinople.</p>
+
+      <q-img src="../../assets/tramvay/ecumencial.jpg"></q-img>
+      <h5>2. The Ecumenical Patriarchate</h5>
+      <p>Also known as the New Roman Patriarchate, is one of the Orthodox autonomous churches.</p>
+
+      <q-img src="../../assets/tramvay/pammakaristos.jpeg"></q-img>
+      <h5>3. Pammakaristos Church</h5>
+      <p>The building is one of the most important Palaeolithic buildings in Constantinople.</p>
+
+      <q-img src="../../assets/tramvay/Hirami_Ahmet_Pasha_Mosque6_180.jpeg"></q-img>
+      <h5>4. Hirami Ahmet Pasha Mosque</h5>
+      <p>This is one of the most Islamic conservative neighborhoods within the city walls</p>
+
+      <q-img src="../../assets/tramvay/Ismail_Aga_Mosque_2487.jpeg"></q-img>
+      <h5>5. Ismail Aga Mosque</h5>
+      <p>This 18th-century red-brick building with minarets and tiled courtyards is the center of the disciplined Sufi faith.</p>
+
+      <q-img src="../../assets/tramvay/Yavuz_Selim_Mosque_DSCF6829.jpeg"></q-img>
+      <h5>6. Yavuz Sultan Selim Mosque</h5>
+      <p>This is a 16th-century Ottoman imperial mosque located at the top of the 5th Hill of Istanbul. Its size and geographic position make it a familiar landmark on the Istanbul skyline.</p>
+
     </div>
   </div>
 
@@ -52,7 +49,6 @@ const infowindows = reactive([])
 const lat = reactive([
   41.02699857468409,
   41.02909219592859,
-  40.958506845625465,
   41.029207344408356,
   41.02808904101996,
   41.02693827481015,
@@ -63,7 +59,6 @@ const lat = reactive([
 const lng = reactive([
   28.956321199887075,
   28.95199145571126,
-  28.82251492190739,
   28.9464674403704,
   28.945886540370537,
   28.947952028722344,
@@ -73,7 +68,6 @@ const lng = reactive([
 const content = reactive([
   'Gül Mosque',
   'The Ecumenical Patriarchate',
-  'St. Stephen Catholic Church',
   'Pammakaristos Church',
   'Hirami Ahmet Pasha Mosque',
   'Ismail Aga Mosque',

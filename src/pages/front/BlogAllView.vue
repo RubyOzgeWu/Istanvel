@@ -83,33 +83,6 @@
                       </q-card-section>
                     </q-card>
                 </div>
-
-                <!-- <div class="col-6">
-                  <q-card flat class="my-card column" style="height:100vh">
-                    <q-card-section class="col-6">
-                      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg"></q-img>
-                    </q-card-section>
-                    <q-card-section class="col-6 column">
-                      <div class="col-3 text-h4"><router-link :to="'/post/' + '62f745f930bac207f6508de7'">testing history2</router-link></div>
-                      <div class="col-9">
-                        <p>orem ipsum dolor sit amet consectetur, adipisicing elit. Molestias similique vero suscipit distinctio sint nostrum excepturi sequi aperiam facilis a est dicta, officia aliquid nihil architecto culpa nobis harum officiis incidunt autem ad, in fuga? Dolore, libero fugit tempora voluptates rerum inventore totam adipisci iusto ducimus quidem nesciunt cupiditate ullam veritatis sed quibusdam quam, omnis dicta deleniti tempore illo? Nobis obcaecati temporibus inventore expedita harum culpa nostrum reiciendis aliquid. Iure iste nobis, alias maxime dolore aut possimus quaerat eaque accusamus sit atque cupiditate, fugit voluptatem earum architecto quasi omnis! Temporibus ratione nisi inventore sed iure esse minima ad officia ab.</p>
-                      </div>
-                    </q-card-section>
-                  </q-card>
-                </div>
-                <div class="col-6">
-                  <q-card flat class="my-card column" style="height:100vh">
-                    <q-card-section class="col-6">
-                      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg"></q-img>
-                    </q-card-section>
-                    <q-card-section class="col-6 column">
-                      <div class="col-3 text-h4"><router-link :to="'/post/' + '62f745f930bac207f6508de7'">testing history2</router-link></div>
-                      <div class="col-9">
-                        <p>orem ipsum dolor sit amet consectetur, adipisicing elit. Molestias similique vero suscipit distinctio sint nostrum excepturi sequi aperiam facilis a est dicta, officia aliquid nihil architecto culpa nobis harum officiis incidunt autem ad, in fuga? Dolore, libero fugit tempora voluptates rerum inventore totam adipisci iusto ducimus quidem nesciunt cupiditate ullam veritatis sed quibusdam quam, omnis dicta deleniti tempore illo? Nobis obcaecati temporibus inventore expedita harum culpa nostrum reiciendis aliquid. Iure iste nobis, alias maxime dolore aut possimus quaerat eaque accusamus sit atque cupiditate, fugit voluptatem earum architecto quasi omnis! Temporibus ratione nisi inventore sed iure esse minima ad officia ab.</p>
-                      </div>
-                    </q-card-section>
-                  </q-card>
-                </div> -->
               </div>
             </q-tab-panel>
           </q-tab-panels>

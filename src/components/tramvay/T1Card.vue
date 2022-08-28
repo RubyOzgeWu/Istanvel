@@ -5,33 +5,58 @@
   </div>
   <div class="col-4 column right">
     <div class="col">
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-      <h2>hagia sophia</h2>
-      <p>Hagia Sophia is the most popular site in Istanbul</p>
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-            <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-            <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
+      <q-img src="../../assets/top10/hagiasofia.jpg"></q-img>
+      <h5>1. Hagia Sophia</h5>
+      <p>Once the state church under Roman Empire's rule, and turned to Mosque after Ottoman Empire occupied.</p>
+
+      <q-img src="../../assets/top10/sultanahmet.jpg"></q-img>
+      <h5>2. Blue Mosque</h5>
+      <p>It was constructed between 1609 and 1616 during the rule of Ahmed I. It contains Ahmed's tomb, a madrasah and a hospice.</p>
+
+      <q-img src="../../assets/tramvay/historical-fountain-sultan-ahmet-iii-istanbul-turkey-february-ahmed-was-built-standing-hagia-sophia-topkapi-75542392.jpeg"></q-img>
+      <h5>3. Fountain Sultan Ahmed III</h5>
+      <p>It was built under Ottoman sultan Ahmed III in 1728, in the style of the Tulip period. It was a social centre and gathering place during the Ottoman period of Constantinople.</p>
+
+      <q-img src="../../assets/tramvay/german-fountain.jpeg"></q-img>
+      <h5>4. Germain Fountain</h5>
+      <p>It was constructed to commemorate the second anniversary of German Emperor Wilhelm II's visit to Istanbul in 1898.</p>
+
+      <q-img src="../../assets/tramvay/hippodrome-of-constantinoplecover-5d84642aef807.jpeg"></q-img>
+      <h5>5. Hippodrome of Constantinople</h5>
+      <p>Hippodromes were common features of Greek cities in the Hellenistic, Roman and Byzantine eras.</p>
+
+      <q-img src="../../assets/tramvay/serpent-column.jpeg"></q-img>
+      <h5>6. Serpent Column</h5>
+      <p>It is part of an ancient Greek sacrificial tripod, originally in Delphi and relocated to Constantinople by Constantine the Great in 324.</p>
+
+      <q-img src="../../assets/top10/cistern.jpg"></q-img>
+      <h5>9. Basilica Cistern</h5>
+      <p>It is located 150 metres southwest of the Hagia Sophia on the historical peninsula of Sarayburnu</p>
+
+      <q-img src="../../assets/tramvay/1200px-Theodosius_cistern_08.jpeg"></q-img>
+      <h5>10. Theodosius Cistern</h5>
+      <p>It was built by Roman Emperor Theodosius II between 428 and 443 to store water supplied by the Valens Aqueduct.</p>
+
+      <q-img src="../../assets/top10/grandBazaar.jpg"></q-img>
+      <h5>12. The Grand Bazaar</h5>
+      <p>It is one of the largest and oldest covered markets in the world</p>
+
+      <q-img src="../../assets/tramvay/sinan_tomb.jpeg"></q-img>
+      <h5>13. Sinan Pasha Tomb</h5>
+      <p>It was built by the Ottoman architect Mimar Sinan for the admiral Sinan Pasha. </p>
+
+      <q-img src="../../assets/tramvay/Tophane-Fountain-in-Istanbul.jpg"></q-img>
+      <h5>19. Tophane Fountain</h5>
+      <p>It is an 18th-century public water fountain built by Ottoman sultan Mahmud I in the Ottoman rococo architecture </p>
+
+      <q-img src="../../assets/top10/misircarsi.jpg"></q-img>
+      <h5>23. Spice Bazaar</h5>
+      <p>The mosque is an example of the Sultanate of Women period in Ottoman Empire.</p>
+
+      <q-img src="../../assets/tramvay/eminonu-new-mosque_646314-10148.jpeg"></q-img>
+      <h5>24. New Mosque</h5>
+      <p>The bazaar has been the center for spice trade in Istanbul for centuries.</p>
+
     </div>
   </div>
 
@@ -53,6 +78,7 @@ const lat = reactive([
   41.00872061287202,
   41.005555315974014,
   41.008444297995865,
+  41.00801906241111,
   41.00595869374599,
   41.00581230832557,
   41.00654743413211,
@@ -85,6 +111,7 @@ const lng = reactive([
   28.980142811534765,
   28.97692108639225,
   28.981144052018266,
+  28.976807646027563,
   28.975123969205136,
   28.975077198040346,
   28.974602080853305,
@@ -117,6 +144,7 @@ const content = reactive([
   'Hagia Sofia',
   'Sultan Ahmet Mosque',
   'Fountain Sultan Ahmed III',
+  'Germain Fountain',
   'Hippodrome of Constantinople',
   'Serpent Column',
   'Museum of Turkish and Islamic Arts',

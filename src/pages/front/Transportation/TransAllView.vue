@@ -15,8 +15,8 @@
       <div class="q-pa-md row items-center selectionBox ">
       <!-- metro -->
         <q-card class="my-card row selection q-mx-xl-xl q-mx-lg-lg  q-mx-md-md q-mx-sm-sm" @click="goMetro" data-aos="fade-right" data-aos-offset="20">
-            <q-card-section class="category col-3 col-xs-12 column">
-              <q-icon name="train" size="140px" color="white" class="icon col-xl-7 col-lg-8 col-md-7 col-sm-7 col-xs-6" />
+            <q-card-section class="category col-3 col-xs-12 column" >
+              <q-icon name="train" size="140px" color="white" class="icon col-xl-7 col-lg-7 col-md-7 col-sm-7 col-xs-6" />
               <div class="text-h6 title col-xl-5 col-lg-5 col-md-5 col-sm-5" >Metro</div>
             </q-card-section>
         </q-card>
@@ -55,6 +55,7 @@
           height="300px"
           class="large"
           data-aos="flip-down"
+          v-if="$q.screen.gt.md"
         >
           <q-carousel-slide :name="1" class="column no-wrap">
             <div class="row fit justify-around items-center no-wrap" >
@@ -162,9 +163,6 @@
           </q-carousel-slide>
         </q-carousel>
       </div>
-     <footer>
-
-    </footer>
 </div>
 </template>
 

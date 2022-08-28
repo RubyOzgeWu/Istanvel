@@ -1,22 +1,17 @@
 <template>
-<div class="row card">
-  <div class="col-8 column left" id="TransCard">
+<div class="row card" id="TransCard">
+  <div class="col-8 column left">
     <div id="map" />
   </div>
   <div class="col-4 column right">
     <div class="col">
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-      <h2>hagia sophia</h2>
-      <p>Hagia Sophia is the most popular site in Istanbul</p>
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
+      <q-img src="../../assets/metro/semsi.jpeg"></q-img>
+      <h5>2. Şemsi Pasha Mosque</h5>
+      <p>The Şemsi Pasha Mosque was designed by Ottoman imperial architect Mimar Sinan for Grand Vizier Şemsi Pasha.</p>
+
+      <q-img src="../../assets/metro/yeni.jpeg"></q-img>
+      <h5>3. Yeni Valide Mosque</h5>
+      <p> It was built for sultan Ahmed III in honour of his mother Emetullah Râbi'a Gülnûş Sultan.</p>
     </div>
   </div>
 
@@ -39,7 +34,6 @@ const lat = reactive([
   41.02609255847969,
   41.02491124961364,
   41.02245283952033,
-  41.0084604902293,
   41.03734594190852,
   41.01376689781175
 ])
@@ -49,7 +43,6 @@ const lng = reactive([
   29.011274923125573,
   29.01509862682192,
   29.014312742163558,
-  28.98118696730233,
   29.030101069151304,
   29.04189051147985
 ])
@@ -59,7 +52,6 @@ const content = reactive([
   'Şemsi Pasha Mosque',
   'Yeni Valide Mosque',
   'Aziz Mahmud Hüdayi Mosque',
-  'Fountain Sultan Ahmed III',
   'Kuzguncuk Sahili',
   'Hababam Sınıfı Museum'
 ])

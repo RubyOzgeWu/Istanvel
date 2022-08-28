@@ -5,33 +5,13 @@
   </div>
   <div class="col-4 column right">
     <div class="col">
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-      <h2>hagia sophia</h2>
-      <p>Hagia Sophia is the most popular site in Istanbul</p>
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-            <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-            <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
+      <q-img src="../../assets/metro/Byzatine_Wall.jpeg"></q-img>
+      <h5>3. Byzantine Wall</h5>
+      <p>The walls protected the city of Constantinople since Roman Empire.</p>
+
+      <q-img src="../../assets/metro/sarachane_park.jpeg"></q-img>
+      <h5>4. Saraçhane Park</h5>
+      <p>A park includes views of the ancient Roman aqueduct.</p>
     </div>
   </div>
 

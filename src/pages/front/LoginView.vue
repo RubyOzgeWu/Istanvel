@@ -19,33 +19,33 @@
             <q-tab-panel name="login" >
               <div class="text-h6 text-center">Login</div>
               <q-form  @submit.prevent='login' class="column">
-                <q-input ref="inputRef" v-model="LoginForm.account" label="Account" :rules="rules.account" />
-                <q-input ref="inputRef" v-model="LoginForm.password" :type="isPwd ? 'password' : 'text'" label="password"
+                <q-input dense ref="inputRef" v-model="LoginForm.account" label="Account" :rules="rules.account" />
+                <q-input dense ref="inputRef" v-model="LoginForm.password" :type="isPwd ? 'password' : 'text'" label="password"
                   :rules="rules.password">
                   <template v-slot:append>
                     <q-icon :name="isPwd ? 'visibility_off' : 'visibility'" class="cursor-pointer"
                       @click="isPwd = !isPwd" />
                   </template>
                 </q-input>
-                <q-btn type="submit" size="22px" class="q-px-xl q-py-xs" color="secondary" label="Login" />
+                <q-btn dense type="submit" size="22px" class="q-px-xl q-py-xs" color="secondary" label="Login" />
               </q-form>
 
             </q-tab-panel>
 
             <!-- sign up--------------------------------------------------- -->
-            <q-tab-panel name="signUp" class="row">
-              <div class="text-h6 text-center col-12">Sign up</div>
-              <q-form v-model='valid' @submit.prevent='register' class="row col-12">
-                <q-input class="col-12" ref="inputRef" v-model="signUpForm.account" label="Name" :rules="rules.account" />
-                <q-input class="col-12" ref="inputRef" v-model="signUpForm.email" label="email" :rules="rules.email" />
-                <q-input class="col-12" ref="inputRef" v-model="signUpForm.password" :type="isPwd ? 'password' : 'text'" label="password"
+            <q-tab-panel name="signUp">
+              <div class="text-h6 text-center">Sign up</div>
+              <q-form v-model='valid' @submit.prevent='register' class="row">
+                <q-input dense class="col-12" ref="inputRef" v-model="signUpForm.account" label="Name" :rules="rules.account" />
+                <q-input dense class="col-12" ref="inputRef" v-model="signUpForm.email" label="email" :rules="rules.email" />
+                <q-input dense class="col-12" ref="inputRef" v-model="signUpForm.password" :type="isPwd ? 'password' : 'text'" label="password"
                   :rules="rules.password">
                   <template v-slot:append>
                     <q-icon :name="isPwd ? 'visibility_off' : 'visibility'" class="cursor-pointer"
                       @click="isPwd = !isPwd" />
                   </template>
                 </q-input>
-                <q-btn type="submit" size="22px" class="q-px-xl q-py-xs sign-up col-12" color="secondary" label="Sign up" />
+                <q-btn dense type="submit" size="22px" class="q-px-xl q-py-xs sign-up col-12" color="secondary" label="Sign up" />
               </q-form>
             </q-tab-panel>
           </q-tab-panels>

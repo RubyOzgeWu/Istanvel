@@ -5,18 +5,38 @@
   </div>
   <div class="col-4 column right">
     <div class="col">
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-      <h2>hagia sophia</h2>
-      <p>Hagia Sophia is the most popular site in Istanbul</p>
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
+      <q-img src="../../assets/metro/beyazite_square.jpeg"></q-img>
+      <h5>4. Beyazit Square</h5>
+      <p>It is officially named 'Freedom Square'.</p>
+
+      <q-img src="../../assets/metro/beyazid_mosue.jpeg"></q-img>
+      <h5>6. Beyazit Mosque</h5>
+      <p>It was commissioned by the Ottoman Sultan Bayezid II, and was the second large imperial mosque complex to be erected in Istanbul after the conquest in 1453.</p>
+
+      <q-img src="../../assets/metro/VefaChurchMosque.jpg"></q-img>
+      <h5>8. Church-Mosque of Vefa</h5>
+      <p>It is a former Eastern Orthodox church converted into a mosque by the Ottomans. </p>
+
+      <q-img src="../../assets/top10/suleymaniye.jpg"></q-img>
+      <h5>9. Süleymaniye Mosque</h5>
+      <p>The mosque was commissioned by Suleiman the Magnificent and designed by the imperial architect Mimar Sinan.</p>
+
+      <q-img src="../../assets/metro/arap-mosque-1.jpeg"></q-img>
+      <h5>12. Arap Mosque</h5>
+      <p>It is the only example of medieval religious Gothic architecture remaining in Istanbul.</p>
+
+      <q-img src="../../assets/galata.jpg"></q-img>
+      <h5>13. Galata Tower</h5>
+      <p>It is one of the symbols of Beyoğlu and Istanbul.</p>
+
+      <q-img src="../../assets/metro/st-anthony-padua-church_646314-10054.jpeg"></q-img>
+      <h5>16. Church of St. Anthony of Padua</h5>
+      <p>It is the largest Roman Catholic church in Istanbul.</p>
+
+      <q-img src="../../assets/metro/beyazite_square.jpeg"></q-img>
+      <h5>18. Taksim Square</h5>
+      <p>It is flanked by late Ottoman era buildings in a variety of styles.</p>
+
     </div>
   </div>
 

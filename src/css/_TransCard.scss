@@ -1,3 +1,40 @@
+#TransCard{
+    .right{
+        .col{
+            width: 100%;
+            // border: 2px solid yellow;
+            .q-img{
+                width: 100%;
+            }
+        }
+        h5{
+            color: white;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-weight: 500;
+            line-height: 1.5;
+            padding-top: 2%;
+        }
+        p{
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 300;
+            line-height: 1.5;
+            padding-bottom: 2%;
+        }
+    }
+}
+@media(max-width:1440px){
+    #TransCard{
+        .right{
+            h5{
+                font-size: 1.75rem;
+            }
+        }
+    }
+}
+
+
+
 //------------------ iPad 1024px---------------------
 @media(max-width:1024px){
     #TransCard{
@@ -10,6 +47,10 @@
             .right{
                 margin-top: 5%;
                 width: 100%;
+
+                h5{
+                    font-size: 1.5rem;
+                }
 
                 .col{
                     padding: 0 5%;
@@ -32,6 +73,14 @@
         .right{
             margin-top: 5%;
             width: 100%;
+
+            h5{
+                font-size: 1.25rem;
+            }
+
+            p{
+                font-size: .5rem;
+            }
 
             .col{
                 padding: 0 5%;

@@ -146,7 +146,7 @@
     </q-page-container>
 
     <q-footer>
-      <div class="q-pa-md row footer">
+      <div v-if="$q.screen.gt.xs" class="q-pa-md row footer">
         <div class="footerCol col-3 row">
           <div class="col-12 footerLogo">
             <q-icon name="img: logo-temporary.png"/>
@@ -168,11 +168,59 @@
           <!-- <p>Call us: 0900-000-000</p>
           <p>Email: istanvel@gmail.com</p> -->
         </div>
-        <div class="footerCol col-3">
+        <div class="footerCol col-3 copyRight">
           <p>Designed by Ruby Oz</p>
           <p>Copyright <q-icon name="mdi-copyright"></q-icon> 2022 Istanvel.</p>
           <p>Istanvel.All rights reserved.</p>
         </div>
+      </div>
+
+<!-- iPhone -->
+      <div v-if="$q.screen.lt.sm" class="q-pa-md row footer smallFooter">
+        <div class="col-12 footerLogo">
+            <q-icon name="img: logo-temporary.png"/>
+            <span>İstanvel</span>
+        </div>
+        <div class="col-12 footerIcons">
+            <q-icon name="mdi-instagram"></q-icon>
+            <q-icon name="mdi-facebook"></q-icon>
+            <q-icon name="mdi-twitter"></q-icon>
+            <q-icon name="mdi-google-plus"></q-icon>
+        </div>
+        <div class="col-12 row contact">
+          <div class="col-6"><q-icon name="mdi-phone"></q-icon>  0900-000-000</div>
+          <div class="col-6"><q-icon name="mdi-gmail"></q-icon> istanvel@gmail.com</div>
+        </div>
+        <div class="col-12 copyRight">
+          <p>Designed by Ruby Oz</p>
+          <p>Copyright <q-icon name="mdi-copyright"></q-icon> 2022 Istanvel.All rights reserved.</p>
+        </div>
+        <!-- <div class="footerCol col-12 row">
+          <div class="col-12 footerLogo">
+            <q-icon name="img: logo-temporary.png"/>
+            <span>İstanvel</span>
+          </div>
+
+          <div class="col-12 footerIcons">
+            <q-icon name="mdi-instagram"></q-icon>
+            <q-icon name="mdi-facebook"></q-icon>
+            <q-icon name="mdi-twitter"></q-icon>
+            <q-icon name="mdi-google-plus"></q-icon>
+          </div>
+        </div>
+
+        <div class="footerCol col-12 contact">
+          <p>Contact us</p>
+          <p class="col-6"><q-icon name="mdi-phone"></q-icon>  0900-000-000</p>
+          <p class="col-6"><q-icon name="mdi-gmail"></q-icon> istanvel@gmail.com</p>
+          <p>Call us: 0900-000-000</p>
+          <p>Email: istanvel@gmail.com</p>
+        </div>
+        <div class="footerCol col-12 copyRight">
+          <p>Designed by Ruby Oz</p>
+          <p>Copyright <q-icon name="mdi-copyright"></q-icon> 2022 Istanvel.</p>
+          <p>Istanvel.All rights reserved.</p>
+        </div> -->
       </div>
     </q-footer>
   </q-layout>

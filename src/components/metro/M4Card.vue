@@ -1,22 +1,17 @@
 <template>
-<div class="row card">
-  <div class="col-8 column left" id="TransCard">
+<div class="row card" id="TransCard">
+  <div class="col-8 column left">
     <div id="map" />
   </div>
   <div class="col-4 column right">
     <div class="col">
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
-      <h2>hagia sophia</h2>
-      <p>Hagia Sophia is the most popular site in Istanbul</p>
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-          <div class="absolute-full text-subtitle2 flex column flex-center">
-          <h3>Hagia Sophia</h3>
-          </div>
-      </q-img>
+      <q-img src="../../assets/metro/feneri.jpeg"></q-img>
+      <h5>1. Kadıköy İnciburnu Feneri</h5>
+      <p>The lighthouse that can watch the beutiful sunset.</p>
+
+      <q-img src="../../assets/metro/Haydarpasha-Mosque-2.jpeg"></q-img>
+      <h5>6. Haydarpasa Mosque</h5>
+      <p>Formerly St. Catherine's Church, is a historic mosque in North Nicosia.</p>
     </div>
   </div>
 

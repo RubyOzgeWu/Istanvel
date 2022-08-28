@@ -1,12 +1,14 @@
 #BlogAllView{
-    background:$primary;
+
     .insideView{
         max-width: 2000px;
         margin: auto;
-        // border: 2px solid yellow;
+        margin-bottom: 5%;
+
         .tabs{
+            // border: 2px solid yellow;
             width: 350px;
-            height: calc(100vh - 54px);
+            // height: calc(100vh - 54px);
             color: white;
             padding: 50px;
             
@@ -22,8 +24,7 @@
             // border: 2px solid yellow;
             background: $primary;
             width: 100%;
-            height: calc(100vh - 54px);
-            overflow-y: scroll;
+            // height: calc(100% - 54px);
             color: white;
 
             .text-h1{

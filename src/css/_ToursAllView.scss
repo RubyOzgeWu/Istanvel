@@ -44,18 +44,21 @@
 //---------------------------M1 1440px-------------------------------
 @media(max-width:1440px){
     #ToursAllView{
-        .q-img{
-            width: 100%;
-            height: 300px;
-    
-            h1{
-                font-size: 4.5rem;
-                line-height: 1.5;
-            }
-            p{
-                font-size: 1.25rem;
+        .banner{
+            .q-img{
+                width: 100%;
+                height: 300px;
+        
+                h1{
+                    font-size: 4.5rem;
+                    line-height: 1.5;
+                }
+                p{
+                    font-size: 1.25rem;
+                }
             }
         }
+
         .background{
             margin: 0 10%;
         }
@@ -65,21 +68,26 @@
 // RWD: 1024px---------------------------------
 @media(max-width:1024px) {
     #ToursAllView{
-        .q-img{
-            width: 100%;
-            height: 250px;
-    
-            h1{
-                font-family: 'Alegreya Sans SC', sans-serif;
-                font-weight: 700;
-                font-size: 4rem;
-                line-height: 1.5;
-            }
-            p{
-                font-family: 'Ubuntu', sans-serif;
-                font-size: 1rem;
+        .banner{
+            .q-img{
+                width: 100%;
+                height: 250px;
+        
+                h1{
+                    font-family: 'Alegreya Sans SC', sans-serif;
+                    font-weight: 700;
+                    font-size: 4rem;
+                    line-height: 1.5;
+                }
+                p{
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 1rem;
+                    padding: 0 5%;
+                    text-align: center;
+                }
             }
         }
+ 
         .background{
             margin: 0 10%;
         }
@@ -89,23 +97,27 @@
 // RWD: 600px-----------------------------------
 @media(max-width:600px) {
     #ToursAllView{
-        .q-img{
-            width: 100%;
-            height: 150px;
-    
-            h1{
-                font-family: 'Alegreya Sans SC', sans-serif;
-                font-weight: 700;
-                font-size: 2rem;
-                line-height: 1.5;
+        .banner{
+            .q-img{
+                width: 100%;
+                height: 150px;
+        
+                h1{
+                    font-family: 'Alegreya Sans SC', sans-serif;
+                    font-weight: 700;
+                    font-size: 2rem;
+                    line-height: 1.5;
+                }
+                p{
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 0.5rem;
+                    padding: 0 5%;
+                    text-align: center;
+                }
             }
-            p{
-                font-family: 'Ubuntu', sans-serif;
-                font-size: 0.5rem;
-                padding: 0 5%;
-                text-align: center;
-            }
+
         }
+
         .background{
             background: $primary;
             margin: 0 3%;
