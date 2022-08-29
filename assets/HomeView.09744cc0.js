@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{k as o,l as t,n as s}from"./index.2be97d02.js";const c={},r={class:"q-pa-md",id:"adminHome"},a=s("h3",{class:"text-center",style:{color:"#0D47A1"}},"\u8ACB\u9078\u64C7\u7BA1\u7406\u9805\u76EE",-1),n=[a];function _(d,i){return o(),t("div",r,n)}var f=e(c,[["render",_]]);export{f as default};
