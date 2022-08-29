@@ -1,7 +1,7 @@
 #ArchiveView{
     background: $primary;
     padding: 5% 15%;
-    height: 100vh;
+    height: 100%;
 
     .archiveTitle{
         color: white;
@@ -12,6 +12,8 @@
     .archive{
         border: 3px solid white;
         border-radius: 5px;
+        // background: #000;
+        margin-bottom: 5%;
 
         .button{
             text-align: right;

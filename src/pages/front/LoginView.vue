@@ -36,9 +36,9 @@
             <q-tab-panel name="signUp">
               <div class="text-h6 text-center">Sign up</div>
               <q-form v-model='valid' @submit.prevent='register' class="row">
-                <q-input dense class="col-12" ref="inputRef" v-model="signUpForm.account" label="Name" :rules="rules.account" />
-                <q-input dense class="col-12" ref="inputRef" v-model="signUpForm.email" label="email" :rules="rules.email" />
-                <q-input dense class="col-12" ref="inputRef" v-model="signUpForm.password" :type="isPwd ? 'password' : 'text'" label="password"
+                <q-input dense class="col col-12" ref="inputRef" v-model="signUpForm.account" label="Account name" :rules="rules.account" />
+                <q-input dense class="col col-12" ref="inputRef" v-model="signUpForm.email" label="email" :rules="rules.email" />
+                <q-input dense class="col col-12" ref="inputRef" v-model="signUpForm.password" :type="isPwd ? 'password' : 'text'" label="password"
                   :rules="rules.password">
                   <template v-slot:append>
                     <q-icon :name="isPwd ? 'visibility_off' : 'visibility'" class="cursor-pointer"

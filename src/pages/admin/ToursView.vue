@@ -93,8 +93,8 @@
                   </q-item>
                 </q-list>
                 <q-card-action>
-                  <q-btn  @click="openDialog(card.row._id)" >編輯</q-btn>
-                  <q-btn   @click="deleteIt(card.row._id)" >刪除</q-btn>
+                  <q-btn class="text-white" style="background:#0D47A1;" @click="openDialog(card.row._id)" >編輯</q-btn>
+                  <q-btn class="text-white" style="background:#A10D48;"  @click="deleteIt(card.row._id)" >刪除</q-btn>
                 </q-card-action>
               </q-card>
             </div>

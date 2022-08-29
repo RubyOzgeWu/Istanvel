@@ -52,7 +52,7 @@
 
             .q-tab-panels{
                 width: 85%;
-                height: 80%;
+                height: 90%;
                 margin: auto;
                 align-items: center;
                 border-radius: 20px;
@@ -69,6 +69,7 @@
                     .q-form{
                         width: 70%;
                         margin: auto;
+                        justify-content: space-around;
                         // padding-top: 10px;
 
 
@@ -89,6 +90,7 @@
                 }
 
             }
+
         }
         
     }
@@ -103,8 +105,9 @@
                 .q-tab-panels{
                     .q-tab-panel{
                         overflow-y: scroll;
+                        
                         .text-h6{
-                            padding-top: 10px;
+                            padding-top: 1%;
                             font-size: 1.5rem;
                             color: $secondary;
                             font-weight: 700;
@@ -192,6 +195,14 @@
                     }
 
                 }
+
+
+                .row{
+                    .q-field{
+                        margin-bottom: 10%;
+                    }
+            
+                }
                 
             }
         }
@@ -212,7 +223,7 @@
             }
     
             .form{
-                height: 80%;
+                height: 85%;
                 padding: 0;
                 padding-top: 1%;
                 padding-bottom: 1%;

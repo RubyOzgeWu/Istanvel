@@ -35,6 +35,7 @@
                     </template>
                   </q-input>
                   <q-input filled v-model.number="quantity" type="number" label="number of ticket"  :rules="quantityRule"/>
+                  <p class="total">Total $ {{activity.price*quantity}}</p>
                   <!-- <q-input filled v-model="checkForm.message" type="textarea" label="leave us some messages" /> -->
                   <q-btn color="secondary" type="submit" class="submit">add to the cart</q-btn>
                   <!-- <q-btn color="secondary" type="submit">click to order</q-btn> -->

@@ -89,6 +89,13 @@
                     box-shadow: 1px 1px 3px 1px rgba(41, 40, 40, 0.3);
                     text-align: center;
 
+                    .total{
+                        font-size: 1.25rem;
+                        font-weight: 500;
+                        color: $secondary;
+                        font-family: 'Ubuntu', sans-serif;
+                    }
+
                     .submit{
                         width: 60%;
                         position: absolute;
@@ -116,6 +123,10 @@
     
                     .q-form{
                         padding: 12% 5%;
+
+                        .total{
+                            margin-top: 1.5%;
+                        }
 
                         .submit{
                             position: absolute;
@@ -166,6 +177,10 @@
     
                     .q-form{
                         padding: 12% 5%;
+
+                        .total{
+                            margin-top: 4%;
+                        }
 
                         .submit{
                             width: 80%;
@@ -227,6 +242,10 @@
                         height: 80%;
                         padding: 10% 5%;
                         padding-bottom: 25%;
+
+                        .total{
+                            margin-top: 4%;
+                        }
     
                     }
                 }
