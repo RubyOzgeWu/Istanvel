@@ -114,7 +114,7 @@
         <p class="title">Enter Info</p>
         <q-btn color="secondary"  @click="openDialog('')" :disabled=" hasInfo()">Enter Info</q-btn>
         <q-dialog v-model="form.dialog" persistent>
-          <q-card style="min-width: 700px">
+          <q-card style="min-width: 300px; width:100%" class="dialog">
             <q-card-section>
               <div class="text-h5" style="font-weight: 700; color: #A10D48;">Enter info</div>
             </q-card-section>
@@ -319,7 +319,7 @@ const submit = async () => {
   } catch (error) {
     Swal.fire({
       icon: 'error',
-      title: '失敗',
+      title: 'failed',
       text: error.isAxiosError ? error.response.data.message : error.message
     })
   }

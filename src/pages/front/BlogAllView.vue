@@ -119,7 +119,7 @@ const init = async() => {
     Swal.fire({
       icon: 'error',
       title: 'failed',
-      text: '伺服器錯誤'
+      text: 'error'
     })
   }
 }

@@ -213,8 +213,8 @@ export const useUserStore = defineStore({
         console.log(error)
         Swal.fire({
           icon: 'error',
-          title: '失敗',
-          text: '更新購物車失敗'
+          title: 'Failed',
+          text: 'Failed to update the cart'
         })
         return false
       }
@@ -378,20 +378,6 @@ export const useUserStore = defineStore({
         this.logout()
       }
     }
-    // async updateOrderInfo (data) {
-    //   try {
-    //     await apiAuth.patch('/users/orderInfo', data)
-    //     return true
-    //   } catch (error) {
-    //     console.log(error)
-    //     Swal.fire({
-    //       icon: 'error',
-    //       title: '失敗',
-    //       text: '更新購物車失敗'
-    //     })
-    //     return false
-    //   }
-    // }
   },
   persist: {
     key: 'vite-shop',

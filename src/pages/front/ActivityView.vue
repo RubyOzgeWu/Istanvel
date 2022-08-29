@@ -100,8 +100,8 @@ const init = async () => {
   } catch (error) {
     Swal.fire({
       icon: 'error',
-      title: '失敗',
-      text: '取得商品資料失敗'
+      title: 'failed',
+      text: 'failed to get activities'
     })
     router.go(-1)
   }

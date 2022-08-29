@@ -1,7 +1,7 @@
 #CartView{
     background: $primary;
-    height: 100vh;
     padding: 5% 10%;
+    height: 100vh;
 
     .cartTitle{
         color: white;
@@ -12,7 +12,6 @@
     .cart{
         border: 3px solid $secondary;
         font-family: 'Ubuntu', sans-serif;
-
 
     }
 
@@ -101,13 +100,39 @@
 //-------------- iPhone 600px ------------------------
 @media(max-width:600px){
     #CartView{
+        height: 100%;
+
         .cartTitle{
             font-size: 2rem;
             text-align: center;
         }
+
+        .q-stepper{
+            height: 100%;
+            border: 2px solid yellow;
+            margin-bottom: 50%;
+        }
         .q-stepper__header{
             display: none;
         }
+
+        .info{
+            .q-table{
+                padding: 5%;
+                border: none;
+                
+                td{
+                    font-size: .5rem;
+                }
+            }
+
+        }
+
+        .q-markup-table{
+            margin: 0;
+        }
+
+
         .total{
             font-size: 1.25rem;
         }
