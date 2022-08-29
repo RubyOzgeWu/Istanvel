@@ -1,0 +1,57 @@
+#ArchiveView{
+    background: $primary;
+    padding: 5% 15%;
+    height: 100vh;
+
+    .archiveTitle{
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+    }
+
+    .archive{
+        border: 3px solid white;
+        border-radius: 5px;
+
+        .button{
+            text-align: right;
+            padding-right: 5%;
+        }
+    }
+}
+
+//--------------------- 1440px----------------------
+@media(max-width:1440px){
+    #ArchiveView{
+        padding: 5% 10%;
+
+        .archiveTitle{
+            font-size: 3rem;
+        }
+
+        .button{
+            span{
+                font-size: .75rem;
+            }
+        
+        }
+    }
+}
+
+//----------------------- iPhone 600px------------
+@media(max-width:600px){
+    #ArchiveView{
+        padding: 5% 8%;
+
+        .archiveTitle{
+            font-size: 2rem;
+        }
+
+        .button{
+            span{
+                font-size: .75rem;
+            }
+        
+        }
+    }
+}

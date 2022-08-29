@@ -28,8 +28,8 @@
                   <q-checkbox v-model="form.sell" label="上架" color="teal" />
                 </q-card-section>
                   <q-card-actions align="right" class="text-primary">
-                    <q-btn flat type='submit' :loading='form.submitting' label="確定" v-close-popup />
-                    <q-btn flat label="取消" @click='form.dialog = false' :disabled='form.submitting' v-close-popup />
+                    <q-btn  flat type='submit' :loading='form.submitting' label="確定" v-close-popup />
+                    <q-btn  flat label="取消" @click='form.dialog = false' :disabled='form.submitting' v-close-popup />
                   </q-card-actions>
               </q-card>
             </q-form>
@@ -92,15 +92,15 @@
                     </q-item>
                   </q-list>
                   <q-card-action>
-                    <q-btn  @click="openDialog(card.row._id)" >編輯</q-btn>
-                    <q-btn   @click="deleteIt(card.row._id)" >刪除</q-btn>
+                    <q-btn class="text-white" style="background:#0D47A1;"  @click="openDialog(card.row._id)" >編輯</q-btn>
+                    <q-btn class="text-white" style="background:#A10D48;"   @click="deleteIt(card.row._id)" >刪除</q-btn>
                   </q-card-action>
                 </q-card>
               </div>
           </template>
           <template #body-cell-edit="edit">
-            <q-btn  @click="openDialog(edit.row._id)" :edit="edit">編輯</q-btn>
-            <q-btn @click="deleteIt(edit.row._id)" >刪除</q-btn>
+            <q-btn class="text-white" style="background:#0D47A1;"   @click="openDialog(edit.row._id)" :edit="edit">編輯</q-btn>
+            <q-btn class="text-white" style="background:#A10D48;"  @click="deleteIt(edit.row._id)" >刪除</q-btn>
           </template>
           <template #body-cell-image="image">
             <q-td>
@@ -139,8 +139,8 @@ const columns = [
   { name: 'image', align: 'center', label: '照片', sortable: true },
   // { name: 'Description', align: 'center', label: '活動介紹（英文）', field: row => row.description, sortable: true },
   // { name: 'ChDescription', align: 'center', label: '活動介紹（中文）', field: row => row.CH_description, sortable: true },
-  { name: 'DateStart', label: 'Category', field: row => row.dateStart, sortable: true },
-  { name: 'DateEnd', label: 'Category', field: row => row.dateEnd, sortable: true },
+  { name: 'DateStart', label: 'Category', field: row => new Date(row.dateStart).toLocaleDateString(), sortable: true },
+  { name: 'DateEnd', label: 'Category', field: row => new Date(row.dateEnd).toLocaleDateString(), sortable: true },
   { name: 'edit', label: '編輯刪除', sortable: true }
 ]
 

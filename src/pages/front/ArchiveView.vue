@@ -1,15 +1,18 @@
 <template>
-<div class="q-pa-md">
-    <h3>My Archive</h3>
-    <div class="q-pa-md column">
+<div class="q-pa-md" id="ArchiveView">
+    <h2 class="archiveTitle">My Archive</h2>
+    <div class="q-pa-md column archive">
         <q-card v-for="(archive, idx) in archives" bordered class="my-card col-12 row" :key="archive._id">
-            <q-card-section class="col-3">
+            <q-card-section class="col-6">
                 <router-link :to="'/post/'+ archive.post._id">{{archive.post.title}}</router-link>
             </q-card-section>
-            <q-card-section class="col-8">
-                <p>{{archive.post.content}}</p>
+            <q-card-section class="col-2" v-if="$q.screen.gt.xs">
+                <p>{{archive.post.category}}</p>
             </q-card-section>
-            <q-card-section class="col-1">
+            <q-card-section class="col-4 button" v-if="$q.screen.gt.xs">
+                <q-btn color="secondary" @click="deleteArchive(idx)">remove</q-btn>
+            </q-card-section>
+            <q-card-section class="col-6 button" v-if="$q.screen.lt.sm">
                 <q-btn color="secondary" @click="deleteArchive(idx)">remove</q-btn>
             </q-card-section>
 

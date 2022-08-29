@@ -102,8 +102,8 @@
 
           <template #body-cell-edit="edit">
             <q-td>
-              <q-btn  @click="openDialog(edit.row._id)" >編輯</q-btn>
-              <q-btn @click="deleteIt(edit.row._id)" >刪除</q-btn>
+              <q-btn class="text-white" style="background:#0D47A1;"  @click="openDialog(edit.row._id)" >編輯</q-btn>
+              <q-btn class="text-white" style="background:#A10D48;"  @click="deleteIt(edit.row._id)" >刪除</q-btn>
             </q-td>
           </template>
           <template #body-cell-image="image">

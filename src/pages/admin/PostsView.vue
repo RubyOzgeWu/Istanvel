@@ -53,8 +53,8 @@
             </q-input>
           </template>
           <template #body-cell-edit="edit">
-            <q-btn  @click="openDialog(edit.row._id)" >編輯</q-btn>
-            <q-btn @click="deleteIt(edit.row._id)" >刪除</q-btn>
+            <q-btn class="text-white" style="background:#0D47A1;"  @click="openDialog(edit.row._id)" >編輯</q-btn>
+            <q-btn class="text-white" style="background:#A10D48;" @click="deleteIt(edit.row._id)" >刪除</q-btn>
           </template>
           <template v-slot:item="card">
             <div
@@ -92,8 +92,8 @@
                   </q-item>
                 </q-list>
                 <q-card-action>
-                  <q-btn  @click="openDialog(card.row._id)" >編輯</q-btn>
-                  <q-btn   @click="deleteIt(card.row._id)" >刪除</q-btn>
+                  <q-btn class="text-white" style="background:#0D47A1;" @click="openDialog(card.row._id)" >編輯</q-btn>
+                  <q-btn class="text-white" style="background:#A10D48;"  @click="deleteIt(card.row._id)" >刪除</q-btn>
                 </q-card-action>
               </q-card>
             </div>
@@ -123,7 +123,7 @@ const columns = [
   },
   { name: 'CH_title', align: 'center', label: '中文標題', field: row => row.CH_title, sortable: true },
   { name: 'author', align: 'center', label: 'Author', field: row => row.author, sortable: true },
-  { name: 'date', align: 'center', label: 'Date', field: row => row.date, sortable: true },
+  { name: 'date', align: 'center', label: 'Date', field: row => new Date(row.date).toLocaleDateString(), sortable: true },
   { name: 'category', align: 'center', label: 'Category', field: row => row.category, sortable: true },
   { name: 'edit', label: '編輯', sortable: true }
 

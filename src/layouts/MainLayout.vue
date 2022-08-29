@@ -9,16 +9,6 @@
           <router-link to="/">İstanvel</router-link>
         </q-toolbar-title>
 
-      <!-- <q-tabs shrink no-caps class="text-white col-7 menu row">
-        <q-route-tab exact to="/" name="mails" label="home" />
-        <q-route-tab exact to="/BlogAll" label="blog" />
-        <q-route-tab exact to="/ToursAll" label="tour" />
-        <q-route-tab exact to="/TransportAll" label="transportation" />
-        <q-route-tab exact label="top10" />
-        <q-route-tab exact to="/ActivitiesAll" label="activities" />
-        <q-route-tab exact label="dictionary" />
-      </q-tabs> -->
-
         <div v-if="$q.screen.gt.sm" class="GL__toolbar-link q-ml-xs q-gutter-md text-body2 text-weight-bold row items-center no-wrap">
           <q-btn flat to="/" class="text-white">
             home
@@ -134,7 +124,7 @@
                 </q-item>
                 <q-item clickable v-ripple  >
                   <q-item-section>
-                    <q-btn class="langButton" to="/CH_MainLayout">CH</q-btn>
+                    <q-btn class="langButton">CH</q-btn>
                   </q-item-section>
                 </q-item>
             </q-list>

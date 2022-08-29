@@ -1,7 +1,8 @@
 <template>
 <div id="OrderView">
   <h2 class="orderTitle">My Orders</h2>
-  <q-markup-table v-if="$q.screen.gt.sm">
+  <div class="order">
+      <q-markup-table v-if="$q.screen.gt.xs">
     <thead>
       <!-- <th>test</th> -->
       <th>Order ID</th>
@@ -29,7 +30,7 @@
         <!-- <td><q-btn @click="openDetail=true" :detail="detail">detail</q-btn></td> -->
       </tr>
     </tbody>
-  </q-markup-table>
+      </q-markup-table>
 
     <q-markup-table v-if="$q.screen.lt.sm">
     <thead>
@@ -46,7 +47,8 @@
         <td>{{new Date(row.date).toLocaleDateString()}}</td>
       </tr>
     </tbody>
-  </q-markup-table>
+    </q-markup-table>
+  </div>
 
   <div>
     <q-dialog
@@ -118,6 +120,7 @@ const openDetail = (_id) => {
 const init = async () => {
   try {
     const { data } = await apiAuth.get('/orders')
+    rows.splice(0, rows.length)
     rows.push(...data.result.map(order => {
       order.totalPrice = order.order.reduce((a, b) => {
         return a + (b.tour?.price || b.activity?.price) * b.quantity

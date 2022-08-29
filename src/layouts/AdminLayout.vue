@@ -1,20 +1,17 @@
 <template>
-  <q-layout view="hHh lpR fFf">
+  <q-layout view="hHh lpR fFf" id="AdminLayout">
 
     <q-header elevated class="bg-primary text-white">
       <q-toolbar>
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
-        <q-toolbar-title>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
-          </q-avatar>
-          後台管理
+        <q-toolbar-title class="backTitle">
+          Istanvel 後台管理
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
-    <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
+    <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered style="background: #1666C0;" class="text-white">
       <!-- drawer content -->
         <q-scroll-area class="fit">
           <q-list>
@@ -65,6 +62,15 @@
 
   </q-layout>
 </template>
+
+<style scoped>
+.backTitle{
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 700;
+
+}
+
+</style>
 
 <script>
 import { ref } from 'vue'

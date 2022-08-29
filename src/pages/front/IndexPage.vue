@@ -118,6 +118,7 @@
           swipeable
           animated
           :autoplay="2500"
+          infinite
           control-color="secondary"
           navigation
           padding

@@ -314,8 +314,8 @@ const submit = async () => {
         email: form.email,
         phone: form.phone
       })
-      getInfo()
     }
+    getInfo()
   } catch (error) {
     Swal.fire({
       icon: 'error',

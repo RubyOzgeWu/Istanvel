@@ -8,6 +8,7 @@
                 :columns="columns"
                 row-key="account"
                 :filter="filter"
+                hide-header
                 >
                 <!-- <template v-slot:header-selection="scope">
                     <q-toggle v-model="scope.selected" />
@@ -24,9 +25,8 @@
                     </q-input>
                 </template>
                 <template #body-cell-deleteUser="deleteUser">
-                      <q-td>
-                        {{deleteUser.row._id}}
-                        <q-btn @click="deleteIt(deleteUser.row._id)">刪除</q-btn>
+                      <q-td class="row button">
+                        <q-btn @click="deleteIt(deleteUser.row._id)" style="background:#A10D48;" class="text-white">刪除</q-btn>
                       </q-td>
                 </template>
             </q-table>
@@ -34,7 +34,14 @@
     </div>
 </div>
 
-</template>
+</template>]
+
+<style scoped>
+.button{
+  justify-content: center;
+}
+
+</style>
 
 <script setup>
 import { ref, reactive } from 'vue'
